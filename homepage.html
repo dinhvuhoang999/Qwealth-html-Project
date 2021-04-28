@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Name</title>
+    <meta name="description"
+        content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
+    <meta name="keywords"
+        content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Plamen Nikolov, WeAreAthlon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <nav class="navbar navbar-qweath navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container container-nav">
+                <a class="navbar-brand" href="#"><img src="./img/nav-logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Members<img src="./img/line-down-menu.png" alt="">
+
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Members 1</a>
+                                <a class="dropdown-item" href="#">Members 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Members3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+
+                        <li class="nav-item button-nav">
+                            <a class="nav-link" href="#">Become A Member</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="banner">
+        <div class="container container-banner">
+            <div class="row row-banner">
+                <div class="col-sm-6 text-banner col-banner">
+                    <h1>QWealth Financial</h1>
+                    <p class="sub-title-banner">Financial Freedom, Global Insights &
+                        Offshore Solutions
+                    </p>
+                    <p class="content-banner">
+                        Get reliable and up-to-date information on Private Investing, Asset Protection and International
+                        Financial Freedom from people in the know.
+                    </p>
+                    <div class="button-banner">
+                        <ul>
+                            <li class="button-member-banner"><a href=""> Become A Member</a></li>
+                            <li class="button-learnmore-banner"><a href=""> learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 imgbook-banner col-banner">
+                    <img class="w-100" src="./img/book-banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="interview">
+        <div class="container container-interview">
+            <div class="row row-interview">
+                <div class="col-sm-6 img-interview">
+                    <img class="w-100 h-100" src="./img/interview-img.png" alt="">
+                </div>
+                <div class="col-sm-6 text-interview">
+                    <h1>Build a future of wealth, privacy and economic and political freedom.</h1>
+                    <p>Q Wealth, established 1996, is the leading private membership site on international asset
+                        protection, wealth creation, private offshore banking and the PT lifestyle.</p>
+                    <a href="">What is PT lifestyle?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-overview">
+        <div class="container-side-overview">
+            <h1>QWealth Report Overview</h1>
+            <p class="text-slide">Members gain instant, online access to our exclusive range of reports written in close
+                consultation with
+                independent financial and internationalisation experts: people who really walk the walk.</p>
+            <p class="special-text-slide">Our latest report, the COVID-19 Economic Security Guide is out now.
+            </p>
+            <section class="variable slider">
+                <div>
+                    <img src="./img/slide-item-1.png">
+                </div>
+                <div>
+                    <img src="./img/slide-item-2.png">
+                </div>
+                <div>
+                    <img src="./img/slide-item-3.png">
+                </div>
+                <div>
+                    <img style="width: 559px; height: 411px;" src="./img/slide-item.png">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="card-sale">
+        <div class="container container-card">
+            <div class="row row-card-sale">
+                <div class="col-lg-6 col-text-card">
+                    <h1>Become a Member</h1>
+                    <p class="content-card">Membership to Qwealth comes with an array of benefits split among two
+                        membership tiers.</p>
+                    <p class="special-content-card">Choose the one that fits you.</p>
+                </div>
+                <div class="col-lg-3 col-card col-card-premium">
+                    <div class="card">
+                        <div class="card-body card-premium">
+                            <div class="img-card-sale text-center">
+                                <img src="./img/card-img-1.png" alt="">
+                            </div>
+                            <p class="title-card-premium text-center">Premium Member</p>
+
+                            <div class="price-premium text-center">
+                                <p class="price-number-premium">5$</p>
+                                <span class="span-premium">/ month</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="./img/img-card-2.png" alt="">
+                                    <p>Access to Free Reports</p>
+                                </li>
+
+                                <li>
+                                    <img src="./img/card-img-3.png" alt="">
+                                    <p>Personal Consultation</p>
+                                </li>
+
+                                <li>
+                                    <img src="./img/img-card-4.png" alt="">
+                                    <p>Premium Reports</p>
+                                </li>
+
+                                <li>
+                                    <img src="./img/card-img-5.png" alt="">
+                                    <p>Lorem Ipsum</p>
+                                </li>
+                            </ul>
+                            <div class="a-premium-card">
+                                <a href=""> Get started</a>
+                            </div>
+                            <div class="rotate-div-card-premium">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-card col-card-member">
+                    <div class="card card-member">
+                        <div class="card-body">
+                            <p class="title-member text-center">Member</p>
+                            <h1 class="text-center">Free</h1>
+                            <ul class="ul-member">
+                                <li>
+                                    <img src="./img/card-member-1.png" alt="">
+                                    <p>Monthly Newsletter</p>
+                                </li>
+                                <li>
+                                    <img src="./img/card-member-2.png" alt="">
+                                    <p>Access to Free Reports</p>
+                                </li>
+                                <li>
+                                    <img src="./img/card-member-3.png" alt="">
+                                    <p>Lorem Ipsum</p>
+                                </li>
+                                <li>
+                                    <img src="./img/card-member-4.png" alt="">
+                                    <p>Lorem Ipsum</p>
+                                </li>
+                            </ul>
+                            <div class="a-member-card">
+                                <a href="" class="button-member-card">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="articles">
+        <h1 class="title-artilces text-center">Recent Articles</h1>
+        <div class="container container-articles">
+            <div class="row row-articles">
+                <div class="column">
+                    <div class="card-article-short">
+                        <img class="w-100" src="./img/article-1.png" alt="">
+                        <div class="content-article-short">
+                            <h1>Beware the CBI Boogeyman</h1>
+                            <p>The growing skyline of Limassol, Cyprus. By Daniel Lucas In late...</p>
+                        </div>
+                        <div class="backgroud-bottom-short"></div>
+                    </div>
+                    <div class="card-article-height">
+                        <img class="w-100" src="./img/article-4.png" alt="">
+                        <div class="content-article-height">
+                            <h1>Panama Open for Business – Testing and Investing</h1>
+                            <p>Peter Macfarlane reports from Panama on
+                                his airport covid testing experience and talks about good deals coming up for
+                                investing...
+                            </p>
+                        </div>
+                        <div class="backgroud-bottom-height"></div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card-article-short">
+                        <img class="w-100" src="./img/imgarticle-3.png" alt="">
+                        <div class="content-article-short">
+                            <h1>A Tax-Free Residence Permit in the European Union for $100</h1>
+                            <p>Peter Macfarlane presents an in-depth analysis of recent changes that have turned this EU
+                                country into a very attractive option for Permanent
+                            </p>
+                        </div>
+                        <div class="backgroud-bottom-short"></div>
+                    </div>
+                    <div class="card-article-height">
+                        <img class="w-100" src="./img/article-4.png" alt="">
+                        <div class="content-article-height">
+                            <h1>Panama Open for Business – Testing and Investing</h1>
+                            <p>Peter Macfarlane reports from Panama on
+                                his airport covid testing experience and talks about good deals coming up for
+                                investing...
+                            </p>
+                        </div>
+                        <div class="backgroud-bottom-height"></div>
+                    </div>
+                </div>
+                <div class="column">
+
+                    <div class="card-article-height">
+                        <img class="w-100" src="./img/article-5.png" alt="">
+                        <div class="content-article-height">
+                            <h1>Panama Open for Business – Testing and Investing</h1>
+                            <p>Peter Macfarlane reports from Panama on
+                                his airport covid testing experience and talks about good deals coming up for
+                                investing...
+                            </p>
+                        </div>
+                        <div class="backgroud-bottom-height"></div>
+                    </div>
+                    <div class="card-article-short">
+                        <img class="w-100" src="./img/article-6.png" alt="">
+                        <div class="content-article-short">
+                            <h1>Residence Update: Uruguay Expands its “Tax Holiday” </h1>
+                            <p>The new business-friendly government in Uruguay has recently amended its “tax holiday”
+                                system for tax residents...
+                            </p>
+                        </div>
+                        <div class="backgroud-bottom-short"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-qwther">
+        <div class="container container-form">
+            <div class="row">
+                <div class="col-lg-6 col-signin-form">
+                    <h1>Get in Touch </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <form id="signin">
+                        <div class="form-top-input">
+                            <input type="text" class="input-name" name="name" placeholder="Name">
+                            <input type="text" name="email" class="input-email" id="" placeholder="Email">
+                        </div>
+                        <input type="text" name="mes" class="input-message" placeholder="Your message here...">
+                        <button type="submit" class="button-form-signin" >Get started</button>
+
+                    </form>
+                </div>
+                <div class="col-lg-6 col-register">
+                    <h1>Register for our Newsletter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <form id="register">
+                        <input type="text" name="email" class="input-emai-register" placeholder="Email">
+                        <div class="div-button">
+                            <button class="button-form-register"> Get started </button>                    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container container-footer">
+            <div class="row row-footer">
+                <div class="col-lg-6 col-footer-left">
+                    <div class="logo-footer">
+                        <img src="./img/icon-footer.png" alt="" class="logo">
+                    </div>
+                    <div class="text-footer-left">
+                        <h1>Qwealth Report</h1>
+                        <p>Email: info@qwealthreport.com</p>
+                        <p>Call us: +44-20 3384 1993</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-footer-right">
+                    <div class="social-logo-footer">
+                        <img src="./img/facebook.png" alt="">
+                        <img src="./img/tiwter.png" alt="">
+                    </div>
+                    <div class="text-footer-right">
+                        <p>Privacy Policy</p>
+                        <p>Copyright Notice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
