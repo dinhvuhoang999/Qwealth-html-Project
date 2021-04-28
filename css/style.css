@@ -231,11 +231,16 @@ body {
     mix-blend-mode: multiply;
     z-index: 1;
 }
+.slick-slide:first-child {
+    padding-left: 210px;
+}
+.content-slide {
+    margin-left: 210px;
+}
 
 .container-side-overview {
     padding: 0px;
     padding-top: 142px;
-    margin-left: 268px;
     margin-right: 0px;
 }
 
@@ -283,12 +288,12 @@ body {
 }
 
 .container-card {
-    max-width: 100%;
+    max-width: 1180px;
 }
 
 .col-text-card {
     margin: auto;
-    padding-left: 118px;
+    padding-left: 9px;
     padding-right: 90px;
 }
 
