@@ -221,7 +221,6 @@ body {
 
 /* end interview */
 /* slide */
-/* push mới 8:08 */
 .slide-overview {
     width: 100%;
     height: 100%;
@@ -267,10 +266,14 @@ body {
 }
 
 .slider {
+    padding-bottom: 136px;
     width: 100%;
 }
 
+
 .slick-slide {
+    max-width: 552px;
+    max-height: 392px;
     margin: 0px 20px;
 }
 
@@ -507,12 +510,22 @@ body {
 }
 
 .content-article-short h1 {
+    margin-bottom: 10px;
     font-size: 24px;
     font-family: Poppins-600;
     color: #FFFFFF;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
+
 .content-article-short p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     margin-bottom: 30px;
     color: #FFFFFF;
     font-size: 18px;
@@ -555,6 +568,13 @@ body {
     background-color: #F4F3EC;
 }
 
+.content-article-height p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
 .backgroud-bottom-height {
     position: absolute;
     bottom: 0;
@@ -572,6 +592,19 @@ body {
 .card-article-short:hover .backgroud-bottom-short {
     background: #F95738;
     opacity: 90%;
+}
+
+.card-article-short:hover h1 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: unset;
+    overflow: visible;
+}
+
+.card-article-short:hover p {
+    margin-bottom: 50px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .card-article-height:hover img {
@@ -889,7 +922,7 @@ footer {
     .button-nav {
         margin: auto;
         padding: 8px 8px 8px 8px;
-        width: 60%;
+        width: 25%;
     }
 
     .nav-item:last-child {
@@ -1024,6 +1057,12 @@ footer {
         width: 100%;
     }
 
+
+    .slick-track {
+        display: flex !important;
+    }
+
+
     /* text and title */
     .text-banner.col-banner h1 {
         font-size: 30px;
@@ -1059,7 +1098,17 @@ footer {
 }
 
 
+@media screen and (max-width:768px) {
+    .button-nav {
+        width: 30%;
+    }
+}
+
 @media screen and (max-width: 576px) {
+    .button-nav {
+        width: 35%;
+    }
+
     .text-banner.col-banner {
         padding: 0px 50px 50px 50px;
         text-align: center;

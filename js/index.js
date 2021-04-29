@@ -57,7 +57,7 @@ $(document).ready(function () {
         email: {
           required: "provide email",
           regex: "wrong style email"
-          }
+        }
       },
       submitHandler: function (form) {
         form.submit();
