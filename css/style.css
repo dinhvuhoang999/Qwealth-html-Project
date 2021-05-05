@@ -236,6 +236,9 @@ body {
 
 /* end interview */
 /* slide */
+.content-slide {
+    margin-left: 268px;
+}
 .slide-overview {
     position: relative;
     background-color: #198A53;
@@ -255,12 +258,9 @@ body {
 
 
 .slick-slide:first-child {
-    padding-left: 210px;
+    padding-left: 268px;
 }
 
-.content-slide {
-    margin-left: 210px;
-}
 
 .container-side-overview {
     margin: auto;
