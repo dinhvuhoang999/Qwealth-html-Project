@@ -154,8 +154,9 @@ body {
 .container-banner {
     position: absolute;
     top: 50%;
-    left: 48%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 1195px;
 }
 
 .title-banner {
