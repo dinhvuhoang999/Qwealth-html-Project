@@ -21,20 +21,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-    <script src="./slick-1.8.1/slick/slick.js"></script>
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="../slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="..slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <div class="menu">
         <nav class="navbar navbar-qweath navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container container-nav">
-                <a class="navbar-brand" href="#"><img src="./img/nav-logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="../img/nav-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -44,13 +44,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="/about">About us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Members<img src="./img/line-down-menu.png" alt="">
-
+                            <a class="nav-link" href="/register" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Members
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Members 1</a>
@@ -60,17 +59,17 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="/contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="/login">Login</a>
                         </li>
 
                         <li class="nav-item button-nav">
-                            <a class="nav-link" href="#">Become A Member</a>
+                            <a class="nav-link" href="/register">Become A Member</a>
                         </li>
                     </ul>
                 </div>
@@ -78,52 +77,71 @@
         </nav>
     </div>
     <div class="banner">
+        <div class="background-full-width">
+            <img src="../img/797a31a75081d69c365aa03fc58bb325.jpg" class="background-image">
+            <div class="back-ground-linear-banner">
+
+            </div>
+        </div>
+
         <div class="container container-banner">
-            <div class="row row-banner">
-                <div class="col-sm-6 text-banner col-banner">
-                    <h1>QWealth Financial</h1>
-                    <p class="sub-title-banner">Financial Freedom, Global Insights &
-                        Offshore Solutions
-                    </p>
-                    <p class="content-banner">
-                        Get reliable and up-to-date information on Private Investing, Asset Protection and International
-                        Financial Freedom from people in the know.
-                    </p>
-                    <div class="button-banner">
-                        <ul>
-                            <li class="button-member-banner"><a href=""> Become A Member</a></li>
-                            <li class="button-learnmore-banner"><a href=""> learn more</a></li>
-                        </ul>
+            <div class="row align-items-stretch">
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="block-1 w-100">
+                            <h1 class="title-banner"> QWealth Financial</h1>
+                            <p class="text-subtitle-banner">Financial Freedom, Global Insights &
+                                Offshore Solutions
+                            </p>
+                            <p class="text-banner">Get reliable and up-to-date information on Private Investing, Asset
+                                Protection and
+                                International Financial Freedom from people in the know.
+                            </p>
+                            <div class="link-of-banner">
+                                <a class="link-member-banner" href=""> Become A Member</a>
+                                <a class="link-learn-banner" href="">Learn More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 imgbook-banner col-banner">
-                    <img class="w-100" src="./img/book-banner.png" alt="">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center">
+                        <div class="block-2 w-100">
+                            <img src="../img/book-banner.png" class="img-banner">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- end banner -->
     <div class="interview">
         <div class="container container-interview">
             <div class="row row-interview">
                 <div class="col-sm-6 img-interview">
-                    <img class="w-100 h-100" src="./img/interview-img.png" alt="">
+                    <img class="w-100 h-100" src="../img/interview-img.png" alt="">
                 </div>
-                <div class="col-sm-6 text-interview">
-                    <h1>Build a future of wealth, privacy and economic and political freedom.</h1>
-                    <p>Q Wealth, established 1996, is the leading private membership site on international asset
+                <div class="col-sm-6 col-text-interview">
+                    <h2 class="title-interview">Build a future of wealth, privacy and economic and political freedom.
+                    </h2>
+                    <p class="text-interview">Q Wealth, established 1996, is the leading private membership site on
+                        international asset
                         protection, wealth creation, private offshore banking and the PT lifestyle.</p>
-                    <a href="">What is PT lifestyle?</a>
+                    <a class="link-to-interview" href="">What is PT lifestyle?</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="slide-overview">
+        <div class="background-img-slide">
+            <img src="../img/bg-slide.png" alt="">
+        </div>
         <div class="container-side-overview">
             <div class="content-slide">
-                <h1>QWealth Report Overview</h1>
-                <p class="text-slide">Members gain instant, online access to our exclusive range of reports written in close
+                <h2 class="title-slide-overview">QWealth Report Overview</h2>
+                <p class="text-slide">Members gain instant, online access to our exclusive range of reports written in
+                    close
                     consultation with
                     independent financial and internationalisation experts: people who really walk the walk.</p>
                 <p class="special-text-slide">Our latest report, the COVID-19 Economic Security Guide is out now.
@@ -131,26 +149,27 @@
             </div>
             <section class="variable slider">
                 <div>
-                    <img src="./img/slide-item-1.png">
+                    <img src="../img/slide-item-1.png">
                 </div>
                 <div>
-                    <img src="./img/slide-item-2.png">
+                    <img src="../img/slide-item-2.png">
                 </div>
                 <div>
-                    <img src="./img/slide-item-3.png">
+                    <img src="../img/slide-item-3.png">
                 </div>
                 <div>
-                    <img src="./img/slide-item.png">
+                    <img src="../img/slide-item.png">
                 </div>
             </section>
+
         </div>
     </div>
 
     <div class="card-sale">
         <div class="container container-card">
             <div class="row row-card-sale">
-                <div class="col-lg-6 col-text-card">
-                    <h1>Become a Member</h1>
+                <div class="col-lg-6 col-text-card pl-2">
+                    <h2 class="title-card-sale">Become a Member</h2>
                     <p class="content-card">Membership to Qwealth comes with an array of benefits split among two
                         membership tiers.</p>
                     <p class="special-content-card">Choose the one that fits you.</p>
@@ -159,7 +178,7 @@
                     <div class="card">
                         <div class="card-body card-premium">
                             <div class="img-card-sale text-center">
-                                <img src="./img/card-img-1.png" alt="">
+                                <img src="../img/card-img-1.png" alt="">
                             </div>
                             <p class="title-card-premium text-center">Premium Member</p>
 
@@ -169,27 +188,27 @@
                             </div>
                             <ul>
                                 <li>
-                                    <img src="./img/img-card-2.png" alt="">
+                                    <img src="../img/img-card-2.png" alt="">
                                     <p>Access to Free Reports</p>
                                 </li>
 
                                 <li>
-                                    <img src="./img/card-img-3.png" alt="">
+                                    <img src="../img/card-img-3.png" alt="">
                                     <p>Personal Consultation</p>
                                 </li>
 
                                 <li>
-                                    <img src="./img/img-card-4.png" alt="">
+                                    <img src="../img/img-card-4.png" alt="">
                                     <p>Premium Reports</p>
                                 </li>
 
                                 <li>
-                                    <img src="./img/card-img-5.png" alt="">
+                                    <img src="../img/card-img-5.png" alt="">
                                     <p>Lorem Ipsum</p>
                                 </li>
                             </ul>
                             <div class="a-premium-card">
-                                <a href=""> Get started</a>
+                                <a href="/register"> Get started</a>
                             </div>
                             <div class="rotate-div-card-premium">
 
@@ -201,22 +220,22 @@
                     <div class="card card-member">
                         <div class="card-body">
                             <p class="title-member text-center">Member</p>
-                            <h1 class="text-center">Free</h1>
+                            <h2 class="text-center">Free</h2>
                             <ul class="ul-member">
                                 <li>
-                                    <img src="./img/card-member-1.png" alt="">
+                                    <img src="../img/card-member-1.png" alt="">
                                     <p>Monthly Newsletter</p>
                                 </li>
                                 <li>
-                                    <img src="./img/card-member-2.png" alt="">
+                                    <img src="../img/card-member-2.png" alt="">
                                     <p>Access to Free Reports</p>
                                 </li>
                                 <li>
-                                    <img src="./img/card-member-3.png" alt="">
+                                    <img src="../img/card-member-3.png" alt="">
                                     <p>Lorem Ipsum</p>
                                 </li>
                                 <li>
-                                    <img src="./img/card-member-4.png" alt="">
+                                    <img src="../img/card-member-4.png" alt="">
                                     <p>Lorem Ipsum</p>
                                 </li>
                             </ul>
@@ -231,25 +250,28 @@
     </div>
 
     <div class="articles">
-        <h1 class="title-artilces text-center">Recent Articles</h1>
+        <h2 class="title-artilces text-center">Recent Articles</h2>
         <div class="container container-articles">
             <div class="row row-articles">
-                <div class="column">
+                <div class="column column-articles">
                     <div class="card-article-short">
-                        <img class="w-100" src="./img/article-1.png" alt="">
+                        <img class="w-100" src="../img/article-1.png" alt="">
                         <div class="content-article-short">
-                            <h1>Beware the CBI Boogeyman</h1>
-                            <p>Peter Macfarlane presents an in-depth analysis of recent changes that have turned this EU
-                                Peter Macfarlane presents an in-depth analysis of recent changes that have turned this EU
+                            <h2 class="title-article-short">Beware the CBI Boogeyman</h2>
+                            <p class="text-article-short">Peter Macfarlane presents an in-depth analysis of recent
+                                changes that have turned this EU
+                                Peter Macfarlane presents an in-depth analysis of recent changes that have turned
+                                this
+                                EU
                             </p>
                         </div>
                         <div class="backgroud-bottom-short"></div>
                     </div>
                     <div class="card-article-height">
-                        <img class="w-100" src="./img/article-4.png" alt="">
+                        <img class="w-100 h-100" src="../img/article-4.png" alt="">
                         <div class="content-article-height">
-                            <h1>Panama Open for Business – Testing and Investing</h1>
-                            <p>Peter Macfarlane reports from Panama on
+                            <h2 class="title-article-height">Panama Open for Business – Testing and Investing</h2>
+                            <p class="text-article-height">Peter Macfarlane reports from Panama on
                                 his airport covid testing experience and talks about good deals coming up for
                                 investing
                                 his airport covid testing experience and talks about good deals coming up for
@@ -260,34 +282,37 @@
                     </div>
                 </div>
 
-                <div class="column">
+                <div class="column column-articles">
                     <div class="card-article-short">
-                        <img class="w-100" src="./img/imgarticle-3.png" alt="">
+                        <img class="w-100" src="../img/imgarticle-3.png" alt="">
                         <div class="content-article-short">
-                            <h1>A Tax-Free Residence Permit in the European Union for $100</h1>
-                            <p>Peter Macfarlane presents an in-depth analysis of recent changes that have turned this EU
+                            <h2 class="title-article-short">A Tax-Free Residence Permit in the European Union for
+                                $100
+                            </h2>
+                            <p class="text-article-short">Peter Macfarlane presents an in-depth analysis of recent
+                                changes that have turned this EU
                                 country into a very attractive option for Permanent
                             </p>
                         </div>
                         <div class="backgroud-bottom-short"></div>
                     </div>
                     <div class="card-article-height">
-                        <img class="w-100" src="./img/bigarticle.png" alt="">
+                        <img class="w-100 h-100" src="../img/webdemo.png" alt="">
                         <div class="content-article-height">
-                            <h1>Panama Open for Business – Testing and Investing</h1>
-                            <p>Peter Macfarlane presents an in-depth analysis of recent changes that have turned this EU
+                            <h2 class="title-article-height">Panama Open for Business – Testing and Investing</h2>
+                            <p class="text-article-height">Peter Macfarlane presents an in-depth analysis of recent
+                                changes that have turned this EU
                                 country into a very attractive option for Permanent</p>
                         </div>
                         <div class="backgroud-bottom-height"></div>
                     </div>
                 </div>
-                <div class="column">
-
+                <div class="column column-articles">
                     <div class="card-article-height">
-                        <img class="w-100" src="./img/article-5.png" alt="">
+                        <img class="w-100 h-100" src="../img/article-5.png" alt="">
                         <div class="content-article-height">
-                            <h1>Panama Open for Business – Testing and Investing</h1>
-                            <p>Peter Macfarlane reports from Panama on
+                            <h2 class="title-article-height">Panama Open for Business – Testing and Investing</h2>
+                            <p class="text-article-height">Peter Macfarlane reports from Panama on
                                 his airport covid testing experience and talks about good deals coming up for
                                 investing
                             </p>
@@ -295,10 +320,12 @@
                         <div class="backgroud-bottom-height"></div>
                     </div>
                     <div class="card-article-short">
-                        <img class="w-100" src="./img/article-6.png" alt="">
+                        <img class="w-100" src="../img/article-6.png" alt="">
                         <div class="content-article-short">
-                            <h1>Residence Update: Uruguay Expands its “Tax Holiday” </h1>
-                            <p>Peter Macfarlane presents an in-depth analysis of recent changes that have turned this EU
+                            <h2 class="title-article-short">Residence Update: Uruguay Expands its “Tax Holiday”
+                            </h2>
+                            <p class="text-article-short">Peter Macfarlane presents an in-depth analysis of recent
+                                changes that have turned this EU
                                 country into a very attractive option for Permanent </p>
                         </div>
                         <div class="backgroud-bottom-short"></div>
@@ -311,25 +338,33 @@
         <div class="container container-form">
             <div class="row">
                 <div class="col-lg-6 col-signin-form">
-                    <h1>Get in Touch </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <h2 class="title-signin-up">Get in Touch </h2>
+                    <p class="text-signin-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor.</p>
                     <form id="signin">
                         <div class="form-top-input">
-                            <input type="text" class="input-name" name="name" placeholder="Name">
-                            <input type="text" name="email" class="input-email" id="" placeholder="Email">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <input type="text" class="input-name" name="name" placeholder="Name">
+                                </div>
+                                <div class="col-sm-7">
+                                    <input type="text" name="email" class="input-email" id="" placeholder="Email">
+                                </div>
+                            </div>
                         </div>
                         <input type="text" name="mes" class="input-message" placeholder="Your message here...">
-                        <button type="submit" class="button-form-signin" >Get started</button>
+                        <button type="submit" class="button-form-signin">Get started</button>
 
-                    </form> 
+                    </form>
                 </div>
-                <div class="col-lg-6 col-register">
-                    <h1>Register for our Newsletter</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                <div class="col-lg-5 col-register ml-auto p-0">
+                    <h2 class="title-register">Register for our Newsletter</h2>
+                    <p class="text-register">Lorem ipsum dolor sit amet consectetur</p>
                     <form id="register">
                         <input type="text" name="email" class="input-emai-register" placeholder="Email">
                         <div class="div-button">
-                            <button class="button-form-register"> Get started </button>                    
+                            <button class="button-form-register"> Get started </button>
                         </div>
                     </form>
                 </div>
@@ -341,18 +376,18 @@
             <div class="row row-footer">
                 <div class="col-lg-6 col-footer-left">
                     <div class="logo-footer">
-                        <img src="./img/icon-footer.png" alt="" class="logo">
+                        <img class="img-logo-footer" src="../img/icon-footer.png" alt="" class="logo">
                     </div>
                     <div class="text-footer-left">
-                        <h1>Qwealth Report</h1>
+                        <h2 class="title-text-footer-left">Qwealth Report</h2>
                         <p>Email: info@qwealthreport.com</p>
                         <p>Call us: +44-20 3384 1993</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-footer-right">
+                <div class="col-lg-6 col-footer-right pr-1">
                     <div class="social-logo-footer">
-                        <img src="./img/facebook.png" alt="">
-                        <img src="./img/tiwter.png" alt="">
+                        <img src="../img/facebook.png" alt="">
+                        <img src="../img/tiwter.png" alt="">
                     </div>
                     <div class="text-footer-right">
                         <p>Privacy Policy</p>
