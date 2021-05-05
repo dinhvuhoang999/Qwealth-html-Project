@@ -129,13 +129,13 @@ body {
     font-size: 16px;
     color: #757575;
 }
-
+/* 
 .banner-blog-details {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 61.63%, rgba(0, 0, 0, 0.6) 100%), url(../img/bannerblogdetails.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .content-banner-blog-details {
     padding-top: calc(506 /1440 *100vw);
