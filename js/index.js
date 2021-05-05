@@ -1,6 +1,6 @@
 $(function () {
   $(window).scroll(function () {
-    if ($('body,html').scrollTop() > 100) {
+    if ($('body,html').scrollTop() > 0) {
       $('.navbar-qweath').addClass('background-nav-scroll')
     } else {
       $('.navbar-qweath').removeClass('background-nav-scroll')
