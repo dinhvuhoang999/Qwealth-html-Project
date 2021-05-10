@@ -252,7 +252,7 @@ body {
     background-color: #198A53;
 }
 
-.background-img-slide img {
+.slide-overview .background-img-slide img {
     position: absolute;
     top: 0;
     left: 0;
@@ -294,20 +294,26 @@ body {
     font-family: Poppins-600;
 }
 
-.slider {
+.slide-homepage .slider {
     padding-bottom: 156px;
     width: 100%;
 }
 
-.slick-slide img {
+.slide-homepage .slick-slide img {
     width: 100%;
 }
 
-.slick-slide {
+.slide-homepage .slick-slide {
     transition: all ease-in-out .3s;
+   
 }
 
-.slick-list.draggable {
+.slide-homepage .slick-slide img {
+    max-width: 555px;
+    max-height: 393px;
+}
+
+.slide-homepage .slick-list.draggable {
     overflow: visible;
 }
 
