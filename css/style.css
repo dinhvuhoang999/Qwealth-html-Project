@@ -237,6 +237,8 @@ body {
 
 .link-to-interview {
     display: inline-block;
+    text-align: center;
+    margin: auto;
     padding: 12px 8px 12px 13px;
     border-radius: 5px;
     color: #FFFFFF;
@@ -250,6 +252,7 @@ body {
 .slide-overview {
     position: relative;
     background-color: #198A53;
+    padding-bottom: 130px;
 }
 
 .slide-overview .background-img-slide img {
@@ -2039,6 +2042,8 @@ button#dropdownMenuButton {
     /* button */
 
     .link-to-interview {
+        display: block;
+        width: 200px;
         padding: 8px 8px 8px 8px;
         margin-bottom: 10px;
     }
@@ -2068,10 +2073,12 @@ button#dropdownMenuButton {
     }
 
     .title-interview {
+        text-align: center;
         font-size: 30px;
     }
 
     .text-interview {
+        text-align: center;
         font-size: 15px;
     }
 
@@ -2263,6 +2270,15 @@ button#dropdownMenuButton {
 
     .text-interview {
         margin-bottom: 10px;
+    }
+    .link-member-banner {
+        margin-right: 0px;
+    }
+    .link-to-interview {
+        font-size: 14px;
+        display: block;
+        width: 155px;
+        padding: 5px 5px 5px 5px;
     }
 }
 
