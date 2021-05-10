@@ -4,6 +4,10 @@
 }
 
 @font-face {
+        font-family: publicsans-400-italic;
+    src: url('../font/Public_Sans/static/PublicSans-Italic.ttf')
+    }
+@font-face {
     font-family: publicsans-600;
     src: url('../font/Public_Sans/static/PublicSans-SemiBold.ttf');
 }
@@ -1538,9 +1542,11 @@ button#dropdownMenuButton {
     display: flex;
 }
 
-.about-slide .slick-dotted.slick-slider {
+.about-slide.slick-dotted.slick-slider {
+    padding-bottom: 30px;
     margin-bottom: 0px;
 }
+
 
 /* end about */
 @media only screen and (max-width:1200px) {
@@ -1625,6 +1631,13 @@ button#dropdownMenuButton {
 
 
 @media screen and (max-width: 992px) {
+    .arrow-pre-about {
+        bottom: 42px;
+    }
+    .arrow-next-about {
+        left: 58%;
+        bottom: 42px;
+    }
    .about-slide .slick-slide {
         width: calc(900/1440 *100vw);
     }
@@ -2073,6 +2086,16 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 576px) {
+    .arrow-pre-about {
+        right: 63%;
+        bottom: 48px;
+    
+    }
+    .arrow-next-about {
+        left: 67%;
+        bottom: 48px;
+    }
+    
     .slide-item-about {
         width: 100% !important;
     }
