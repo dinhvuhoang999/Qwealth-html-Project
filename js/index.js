@@ -26,7 +26,7 @@ $(window).resize(checkWidth);
 
 $(function () {
 
-  $(".variable").slick({
+  $(".slide-homepage").slick({
     dots: false,
     infinite: false,
     prevArrow: false,
@@ -85,9 +85,10 @@ $(document).ready(function () {
 
         email: {
           required: "Please provide a Email",
+          regex: "Wrong style Email",
         },
         mes: {
-          required: "nhập email",
+          required: "Please provide a Message",
         }
 
       },
@@ -96,5 +97,50 @@ $(document).ready(function () {
         console.log("submit");
       },
     });
+  });
+});
+
+$(document).ready(function () {
+  $(".dropdown-item").click(function () {
+    $(".dropdown-item").val("1");
+    console.log($(".dropdown-item").value);
+  });
+});
+
+
+
+// blog
+$(function () {
+  $(".blog-slide").slick({
+    dots: true,
+    infinite: false,
+    prevArrow: '.arrow-pre',
+    nextArrow: '.arrow-next',
+    variableWidth: true
+  });
+});
+
+$(document).ready(function () {
+  var a = $(".item-select").first().text();
+
+  $("#dropdownMenuButton").text(a);
+  $(".dropdown-item").click(function () {
+    const text = this.outerText;
+    console.log(text)
+    $("#dropdownMenuButton").text(this.outerText);
+  });
+});
+// 
+
+// slide
+
+$(function () {
+
+  $(".about-slide").slick({
+    dots: true,
+    infinite: false,
+    prevArrow: '.arrow-pre-about',
+    nextArrow: '.arrow-next-about',
+    variableWidth: true,
   });
 });
