@@ -215,12 +215,6 @@ body {
     padding: 0px;
 }
 
-.col-text-interview {
-    padding-top: 171px;
-    padding-left: 55px;
-    padding-right: 151px;
-}
-
 .title-interview {
     margin-bottom: 37px;
     color: green;
@@ -1621,8 +1615,7 @@ button#dropdownMenuButton {
 
     .col-text-interview {
         padding: 0px;
-        padding-right: 20px;
-        padding-top: 100px;
+        padding-left: 20px;
     }
 
     .col-card-member {
@@ -2042,8 +2035,8 @@ button#dropdownMenuButton {
     /* button */
 
     .link-to-interview {
-        display: block;
-        width: 200px;
+        width: 150px;
+        font-size: 13px;
         padding: 8px 8px 8px 8px;
         margin-bottom: 10px;
     }
@@ -2069,17 +2062,18 @@ button#dropdownMenuButton {
     /* text and title */
 
     .title-slide-overview {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .title-interview {
-        text-align: center;
-        font-size: 30px;
+        margin-bottom: 10px;
+        padding-right: 8px;
+        font-size: 25px;
     }
 
     .text-interview {
-        text-align: center;
-        font-size: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
 
     .text-slide {
@@ -2099,6 +2093,9 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 576px) {
+    /* homepage */
+
+    /* end  */
     .arrow-pre-about {
         right: 63%;
         bottom: 48px;
