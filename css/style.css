@@ -870,6 +870,9 @@ footer {
 }
 
 /* blog */
+.big-img-blog {
+    margin-bottom: 35px;
+}
 /* article */
 
 .artilce {
@@ -898,14 +901,14 @@ footer {
 
 .title-article-spotlight a {
     display: block;
+    margin-bottom: 16px;
     padding-right: 100px;
     font-size: 40px;
     font-family: publicsans-700;
     color: #006634;
 }
 
-.content-spotlight a {
-    display: block;
+.content-spotlight p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -1105,7 +1108,7 @@ footer {
 
 
 .container-archived {
-    max-width: 1215px;
+    max-width: 1194px;
 }
 
 .archived select.form-control.form-control-lg.archived-sort {
@@ -1169,6 +1172,8 @@ button#dropdownMenuButton {
 
 .row-archived {
     margin-bottom: 209px;
+    margin-left: -25px;
+    margin-right: -25px;
 }
 
 .date-slide-archide {
@@ -1572,18 +1577,12 @@ button#dropdownMenuButton {
     }
 
     .col-archived {
-        margin-left: 10px;
+        margin-left: 0px;
         width: calc(100%/3);
     }
 
     .archived-top-img {
         width: 100%;
-    }
-
-    .row-archived {
-        margin: auto;
-        justify-content: center;
-        flex-wrap: nowrap;
     }
 
     /* end BlogReposive */
@@ -1643,7 +1642,7 @@ button#dropdownMenuButton {
     }
 
     .about-slide .slick-slide {
-        width: calc(900/1440 *100vw);
+        width: calc(900/1440 *90vw);
     }
 
     .title-slide-item-about {
@@ -1788,7 +1787,7 @@ button#dropdownMenuButton {
         text-align: center;
     }
 
-    .content-spotlight a {
+    .content-spotlight p {
         width: 100%;
         font-size: 15px;
     }
@@ -2232,7 +2231,7 @@ button#dropdownMenuButton {
         font-size: 21px;
     }
 
-    .content-spotlight a {
+    .content-spotlight p {
         font-size: 15px;
     }
 
