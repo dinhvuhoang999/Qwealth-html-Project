@@ -4,9 +4,10 @@
 }
 
 @font-face {
-        font-family: publicsans-400-italic;
+    font-family: publicsans-400-italic;
     src: url('../font/Public_Sans/static/PublicSans-Italic.ttf')
-    }
+}
+
 @font-face {
     font-family: publicsans-600;
     src: url('../font/Public_Sans/static/PublicSans-SemiBold.ttf');
@@ -68,7 +69,6 @@ body {
     padding: 14px 18px 10px 17px;
     font-family: publicsans-500;
     line-height: 18px;
-    transition: 0.4;
 }
 
 .nav-item:last-child {
@@ -77,7 +77,7 @@ body {
 
 .nav-link {
     padding: 0px !important;
-    color: black !important;
+    color: #333333 !important;
     font-size: 16px;
 }
 
@@ -86,7 +86,7 @@ body {
     margin-left: 22px;
     border-radius: 5px;
     font-family: publicsans-700;
-    background-color: red;
+    background-color: #F95738;
 }
 
 .nav-item.dropdown {
@@ -118,7 +118,7 @@ body {
 
 #navbarDropdown::after {
     content: "";
-    border: solid black;
+    border: solid #333333;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 2px;
@@ -172,14 +172,14 @@ body {
 .title-banner {
     margin-bottom: 20px;
     font-family: Poppins-700;
-    color: green;
+    color: #006634;
     font-size: 60px;
 }
 
 .text-subtitle-banner {
     margin-bottom: 20px;
     font-family: Poppins-600;
-    color: black;
+    color: #333333;
     font-size: 28px;
 }
 
@@ -197,7 +197,7 @@ body {
     color: #FFFFFF;
     font-family: publicsans-700;
     display: inline-block;
-    background-color: Red;
+    background-color: #F95738;
 }
 
 .link-learn-banner {
@@ -217,7 +217,7 @@ body {
 
 .title-interview {
     margin-bottom: 37px;
-    color: green;
+    color: #006634;
     font-family: Poppins-600;
     font-size: 38px;
 }
@@ -238,7 +238,7 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     font-family: publicsans-700;
-    background-color: red;
+    background-color: #F95738;
 }
 
 /* end interview */
@@ -302,7 +302,7 @@ body {
 
 .slide-homepage .slick-slide {
     transition: all ease-in-out .3s;
-   
+
 }
 
 .slide-homepage .slick-slide img {
@@ -334,7 +334,7 @@ body {
 
 .title-card-sale {
     display: inline-block;
-    color: green;
+    color: #006634;
     font-family: Poppins-600;
     font-size: 38px;
 }
@@ -742,7 +742,7 @@ body {
 .title-register {
     margin-bottom: 18px;
     padding-right: 250px;
-    color: green;
+    color: #006634;
     font-size: 34px;
 }
 
@@ -758,7 +758,7 @@ body {
 }
 
 .title-signin-up {
-    color: green;
+    color: #006634;
     font-family: Poppins-600;
     font-size: 34px;
     margin-bottom: 20px;
@@ -781,7 +781,7 @@ body {
     color: #FFFF;
     font-family: 'publicsans-700';
     font-size: 16px;
-    background: red;
+    background: #F95738;
     float: right;
 }
 
@@ -793,7 +793,7 @@ body {
     color: #FFFF;
     font-size: 16px;
     font-family: 'publicsans-700';
-    background: red;
+    background: #F95738;
     float: right;
 }
 
@@ -884,7 +884,7 @@ footer {
 .col-article h1 {
     font-family: Poppins-600;
     font-size: 13px;
-    color: green;
+    color: #006634;
     margin-bottom: 22px;
 }
 
@@ -901,7 +901,7 @@ footer {
     padding-right: 100px;
     font-size: 40px;
     font-family: publicsans-700;
-    color: green;
+    color: #006634;
 }
 
 .content-spotlight a {
@@ -934,7 +934,7 @@ footer {
     margin-bottom: 14px;
     font-family: publicsans-700;
     font-size: 22px;
-    color: black;
+    color: #333333;
 }
 
 .author-blog p {
@@ -970,7 +970,7 @@ footer {
 .title-slide-blog {
     font-family: Poppins-600;
     font-size: 35px;
-    color: green;
+    color: #006634;
     padding-top: 55px;
 }
 
@@ -1001,7 +1001,7 @@ footer {
     margin-top: 30px;
     margin-bottom: 9px;
     font-family: publicsans-700;
-    color: green;
+    color: #006634;
     font-size: 28px;
 }
 
@@ -1100,7 +1100,7 @@ footer {
     display: inline-block;
     font-family: Poppins-600;
     font-size: 35px;
-    color: green;
+    color: #006634;
 }
 
 
@@ -1381,7 +1381,7 @@ button#dropdownMenuButton {
 .title-interview-about {
     font-family: Poppins-600;
     font-size: 35px;
-    color: black;
+    color: #333333;
 }
 
 .underline-text-interview-about {
@@ -1456,7 +1456,7 @@ button#dropdownMenuButton {
 .text-author-slide {
     font-family: publicsans-600;
     font-size: 20px;
-    color: black;
+    color: #333333;
     margin-left: 20px;
 }
 
@@ -1516,7 +1516,7 @@ button#dropdownMenuButton {
     font-family: Poppins-600;
     font-size: 35px;
     margin-bottom: 35px;
-    color: green;
+    color: #006634;
 }
 
 .row-slide-about-top {
@@ -1636,11 +1636,13 @@ button#dropdownMenuButton {
     .arrow-pre-about {
         bottom: 42px;
     }
+
     .arrow-next-about {
         left: 58%;
         bottom: 42px;
     }
-   .about-slide .slick-slide {
+
+    .about-slide .slick-slide {
         width: calc(900/1440 *100vw);
     }
 
@@ -1817,12 +1819,12 @@ button#dropdownMenuButton {
 
     .slide-blog .arrow-pre {
         right: 57%;
-        top: 94%;
+        top: 93.4%;
     }
 
     .slide-blog .arrow-next {
         left: 57%;
-        top: 94%;
+        top: 93.4%;
     }
 
     .title-slide-blog {
@@ -2094,18 +2096,21 @@ button#dropdownMenuButton {
 
 @media screen and (max-width: 576px) {
     /* homepage */
-
+    .slide-overview {
+        padding-top: 90px;
+    }
     /* end  */
     .arrow-pre-about {
         right: 63%;
         bottom: 48px;
-    
+
     }
+
     .arrow-next-about {
         left: 67%;
         bottom: 48px;
     }
-    
+
     .slide-item-about {
         width: 100% !important;
     }
@@ -2260,6 +2265,7 @@ button#dropdownMenuButton {
     }
 
     .col-text-interview {
+        position: absolute;
         padding-top: 50px;
         padding: 20px;
         text-align: center;
@@ -2268,9 +2274,11 @@ button#dropdownMenuButton {
     .text-interview {
         margin-bottom: 10px;
     }
+
     .link-member-banner {
         margin-right: 0px;
     }
+
     .link-to-interview {
         font-size: 14px;
         display: block;
