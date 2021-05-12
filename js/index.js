@@ -131,8 +131,16 @@ $(document).ready(function () {
   });
 });
 // 
+$(document).ready(function () {
+  $(".link-learn-banner").click(function () {
+    console.log('da click');
+    $('html, body').animate({scrollTop:$(document).height()}, 'slow');
 
+
+  })
+})
 // slide
+
 
 $(function () {
 

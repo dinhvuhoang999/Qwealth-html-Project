@@ -69,6 +69,17 @@ body {
     padding: 14px 18px 10px 17px;
     font-family: publicsans-500;
     line-height: 18px;
+    transition: 0.5s;
+}
+
+
+.nav-item:hover {
+    background-color: #f3f3f4;
+    border-radius: 5px;
+}
+
+.nav-item:last-child:hover {
+background-color: #f95738cf;
 }
 
 .nav-item:last-child {
@@ -157,7 +168,7 @@ body {
 }
 
 .img-banner {
-    width: 50vw;
+    width: 100%;
     margin-top: 171px;
 }
 
@@ -200,7 +211,13 @@ body {
     background-color: #F95738;
 }
 
+.link-member-banner:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .link-learn-banner {
+    cursor: pointer;
     display: inline-block;
     font-family: publicsans-500;
     color: #000000;
@@ -239,6 +256,11 @@ body {
     font-size: 16px;
     font-family: publicsans-700;
     background-color: #F95738;
+}
+
+.link-to-interview:hover {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* end interview */
@@ -783,9 +805,11 @@ body {
     font-size: 16px;
     background: #F95738;
     float: right;
+    cursor: pointer;
 }
 
 .button-form-register {
+    cursor: pointer;
     margin-top: 26px;
     padding: 13px 47px 11px 52px;
     border: none;
@@ -870,6 +894,10 @@ footer {
 }
 
 /* blog */
+.big-img-blog {
+    margin-bottom: 35px;
+}
+
 /* article */
 
 .artilce {
@@ -898,14 +926,14 @@ footer {
 
 .title-article-spotlight a {
     display: block;
+    margin-bottom: 16px;
     padding-right: 100px;
     font-size: 40px;
     font-family: publicsans-700;
     color: #006634;
 }
 
-.content-spotlight a {
-    display: block;
+.content-spotlight p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -982,7 +1010,7 @@ footer {
 }
 
 .slide-blog .slick-slide {
-    margin: 0px 20px;
+    margin: 0px 25px;
 }
 
 .slide-blog .slick-slide {
@@ -1005,7 +1033,12 @@ footer {
     font-size: 28px;
 }
 
+.title-href-slide-item-blog:hover {
+    color: #006634;
+}
+
 .content-item-blog {
+    margin-bottom: 11px;
     font-family: publicsans-400;
     font-size: 18px;
     display: -webkit-box;
@@ -1017,14 +1050,15 @@ footer {
 .slide-blog .arrow-pre {
     display: inline-block;
     position: absolute;
-    right: 54%;
-    bottom: 0px;
+    right: 55.5%;
+    bottom: 5.6%;
 }
 
 .slide-blog .arrow-next {
+    display: inline-block;
     position: absolute;
-    left: 54%;
-    bottom: 0px;
+    left: 55.5%;
+    bottom: 5.6%;
 }
 
 .slide-blog .slick-slide img {
@@ -1042,11 +1076,11 @@ footer {
 }
 
 .slide-blog .slick-dots {
-    bottom: 0px;
+    bottom: 7%;
 }
 
 .slide-blog .slick-dotted.slick-slider {
-    padding-bottom: 118px;
+    padding-bottom: 96px;
 }
 
 .container-slide-blog {
@@ -1105,7 +1139,7 @@ footer {
 
 
 .container-archived {
-    max-width: 1215px;
+    max-width: 1194px;
 }
 
 .archived select.form-control.form-control-lg.archived-sort {
@@ -1150,6 +1184,10 @@ button#dropdownMenuButton {
     color: #333333;
 }
 
+.title-item-archied:hover {
+    color: #333333;
+}
+
 .col-archived {
     padding-left: 25px;
     padding-right: 25px;
@@ -1169,6 +1207,8 @@ button#dropdownMenuButton {
 
 .row-archived {
     margin-bottom: 209px;
+    margin-left: -25px;
+    margin-right: -25px;
 }
 
 .date-slide-archide {
@@ -1365,6 +1405,7 @@ button#dropdownMenuButton {
 
 /*interview  */
 .interview-about {
+    padding-bottom: 64px;
     background-color: #F4F3EC;
 }
 
@@ -1572,18 +1613,12 @@ button#dropdownMenuButton {
     }
 
     .col-archived {
-        margin-left: 10px;
+        margin-left: 0px;
         width: calc(100%/3);
     }
 
     .archived-top-img {
         width: 100%;
-    }
-
-    .row-archived {
-        margin: auto;
-        justify-content: center;
-        flex-wrap: nowrap;
     }
 
     /* end BlogReposive */
@@ -1633,17 +1668,22 @@ button#dropdownMenuButton {
 
 
 @media screen and (max-width: 992px) {
+    .interview-about {
+        padding-bottom: 21px;
+        padding-top: 20px;
+    }
+
     .arrow-pre-about {
-        bottom: 42px;
+        bottom: 9.1%;
     }
 
     .arrow-next-about {
-        left: 58%;
-        bottom: 42px;
+        left: 58.6%;
+        bottom: 9.1%;
     }
 
     .about-slide .slick-slide {
-        width: calc(900/1440 *100vw);
+        width: calc(900/1440 *90vw);
     }
 
     .title-slide-item-about {
@@ -1758,8 +1798,12 @@ button#dropdownMenuButton {
         margin-bottom: 17px;
     }
 
+    .slide-blog .slick-dotted.slick-slider {
+        padding-bottom: 73px;
+    }
+
     .slick-dots {
-        top: 90%;
+        top: 84%;
         padding-bottom: 0px;
     }
 
@@ -1788,7 +1832,7 @@ button#dropdownMenuButton {
         text-align: center;
     }
 
-    .content-spotlight a {
+    .content-spotlight p {
         width: 100%;
         font-size: 15px;
     }
@@ -1818,13 +1862,13 @@ button#dropdownMenuButton {
     }
 
     .slide-blog .arrow-pre {
-        right: 57%;
-        top: 93.4%;
+        right: 58%;
+        top: 89.5%;
     }
 
     .slide-blog .arrow-next {
-        left: 57%;
-        top: 93.4%;
+        left: 58%;
+        top: 89.5%;
     }
 
     .title-slide-blog {
@@ -2095,20 +2139,19 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 576px) {
+
     /* homepage */
     .slide-overview {
         padding-top: 90px;
     }
+
     /* end  */
     .arrow-pre-about {
         right: 63%;
-        bottom: 48px;
-
     }
 
     .arrow-next-about {
         left: 67%;
-        bottom: 48px;
     }
 
     .slide-item-about {
@@ -2220,10 +2263,12 @@ button#dropdownMenuButton {
 
     .slide-blog .arrow-pre {
         right: 65%;
+        top: 88.2%;
     }
 
     .slide-blog .arrow-next {
         left: 65%;
+        top: 88.2%;
     }
 
     /* article */
@@ -2232,7 +2277,7 @@ button#dropdownMenuButton {
         font-size: 21px;
     }
 
-    .content-spotlight a {
+    .content-spotlight p {
         font-size: 15px;
     }
 
@@ -2288,6 +2333,16 @@ button#dropdownMenuButton {
 }
 
 @media only screen and (max-width:280px) {
+    .arrow-pre-about {
+        right: 63%;
+        bottom: 8.9%;
+    }
+
+    .arrow-next-about {
+        left: 70%;
+        bottom: 8.9%;
+    }
+
     .card-article-short {
         max-width: 90%;
         margin: auto;
