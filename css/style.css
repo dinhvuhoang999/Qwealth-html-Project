@@ -242,10 +242,7 @@ body {
 /*end baner-title-text */
 
 /* interview */
-.container-interview {
-    max-width: 100%;
-    padding: 0px;
-}
+
 
 .title-interview {
     margin-bottom: 37px;
@@ -278,6 +275,10 @@ body {
     text-decoration: none;
 }
 
+.img-interview-homepage {
+    width: 50vw;
+    height: 53vw;
+}
 /* end interview */
 /* slide */
 .slide-overview {
@@ -1608,13 +1609,11 @@ button#dropdownMenuButton {
 
 
 /* end about */
-@media only screen and (min-width : 1500px) {
-    .col-text-interview {
-        max-width: 30%;
-    }
-}
-    
 @media only screen and (max-width:1200px) {
+    .container-banner {
+        top: 36%;
+    }
+
     .text-slide-item-about {
         width: 100%;
     }
@@ -1689,6 +1688,15 @@ button#dropdownMenuButton {
 
 
 @media screen and (max-width: 992px) {
+    .block-img-header {
+        margin: auto;
+        width: 50% !important;
+    }
+    
+    .row-header-homepage {
+        margin-top: 360px;
+    }
+
     .interview-about {
         padding-bottom: 21px;
         padding-top: 20px;
@@ -2150,6 +2158,7 @@ button#dropdownMenuButton {
     .special-text-slide {
         font-size: 18px;
     }
+
 }
 
 
@@ -2160,7 +2169,13 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 576px) {
-
+    .block-img-header {
+        width: 90% !important;
+    }
+    .img-interview-homepage {
+        width: 100vw;
+        height: 100vw;
+    }
     /* homepage */
     .slide-overview {
         padding-top: 90px;
