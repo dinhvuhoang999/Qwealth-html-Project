@@ -63,6 +63,10 @@ body {
     transition: 0.4s;
 }
 
+.about-page .nav-link {
+    color: #FFFFFF !important;
+}
+
 .nav-item {
     margin-left: 5px;
     margin-right: 10px;
@@ -78,8 +82,12 @@ body {
     border-radius: 5px;
 }
 
+.about-page .nav-item:hover .nav-link {
+    color: #333333 !important;
+}
+
 .nav-item:last-child:hover {
-background-color: #f95738cf;
+    background-color: #f95738cf;
 }
 
 .nav-item:last-child {
@@ -125,6 +133,13 @@ background-color: #f95738cf;
 
 .navbar-jquery {
     background-color: #FFFFFF !important
+}
+
+.about-page #navbarDropdown::after {
+    border-color: #FFFFFF;
+}
+.about-page .nav-item:hover #navbarDropdown::after {
+    border-color: #333333 ;
 }
 
 #navbarDropdown::after {
@@ -1593,6 +1608,12 @@ button#dropdownMenuButton {
 
 
 /* end about */
+@media only screen and (min-width : 1500px) {
+    .col-text-interview {
+        max-width: 30%;
+    }
+}
+    
 @media only screen and (max-width:1200px) {
     .text-slide-item-about {
         width: 100%;
