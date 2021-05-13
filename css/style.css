@@ -63,10 +63,6 @@ body {
     transition: 0.4s;
 }
 
-.about-page .nav-link {
-    color: #FFFFFF !important;
-}
-
 .nav-item {
     margin-left: 5px;
     margin-right: 10px;
@@ -80,10 +76,6 @@ body {
 .nav-item:hover {
     background-color: #f3f3f4;
     border-radius: 5px;
-}
-
-.about-page .nav-item:hover .nav-link {
-    color: #333333 !important;
 }
 
 .nav-item:last-child:hover {
@@ -135,9 +127,6 @@ body {
     background-color: #FFFFFF !important
 }
 
-.about-page #navbarDropdown::after {
-    border-color: #FFFFFF;
-}
 .about-page .nav-item:hover #navbarDropdown::after {
     border-color: #333333 ;
 }
@@ -599,6 +588,7 @@ body {
     color: #FFFFFF;
     font-size: 18px;
     font-family: publicsans-400;
+    transition: 0.4s;
 }
 
 .container-articles {
@@ -634,6 +624,7 @@ body {
 .content-article-height {
     position: absolute;
     bottom: 0px;
+    transition: 0.4s;
     padding-bottom: 22px;
     padding-top: 37px;
     padding-left: 35px;
@@ -646,6 +637,7 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    transition: 0.4s;
 }
 
 .backgroud-bottom-height {
@@ -690,6 +682,11 @@ body {
     color: #FFFFFF;
     background: transparent;
     z-index: 3;
+
+}
+
+.card-article-height:hover .text-article-height {
+    -webkit-line-clamp :inherit;
 }
 
 .card-article-height:hover .backgroud-bottom-height {
@@ -1394,7 +1391,7 @@ button#dropdownMenuButton {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 
 .container-banner-about {
@@ -2121,6 +2118,7 @@ button#dropdownMenuButton {
         padding-top: 50px;
         text-align: center;
         padding: 7px;
+        padding-top: 55px
     }
 
     .slider {
@@ -2167,7 +2165,6 @@ button#dropdownMenuButton {
         width: 30%;
     }
 }
-
 @media screen and (max-width: 576px) {
     .block-img-header {
         width: 90% !important;
