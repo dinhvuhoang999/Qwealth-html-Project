@@ -835,6 +835,8 @@ body {
 }
 
 footer {
+    padding-top: 81px;
+    padding-bottom: 46px;
     margin-top: 75px;
     background-color: #006634;
 }
@@ -845,19 +847,12 @@ footer {
 
 .logo-footer {
     display: inline-block;
+    margin-right: 52px;
 }
 
-.img-logo-footer {
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
 
 .text-footer-left {
     display: inline-block;
-}
-
-.text-footer-left {
-    padding-top: 78px;
 }
 
 .title-text-footer-left {
@@ -876,13 +871,12 @@ footer {
 }
 
 .col-footer-right {
-    padding-top: 86px;
     text-align: right;
 }
 
 
 .social-logo-footer {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
 }
 
 .social-logo-footer img {
@@ -1689,10 +1683,6 @@ button#dropdownMenuButton {
         margin: auto;
         width: 50% !important;
     }
-    
-    .row-header-homepage {
-        margin-top: 360px;
-    }
 
     .interview-about {
         padding-bottom: 21px;
@@ -1927,11 +1917,6 @@ button#dropdownMenuButton {
 
     .banner {
         padding-bottom: 747px;
-    }
-
-    .img-banner {
-        width: 100%;
-        margin-top: 0px;
     }
 
     .link-of-banner {
@@ -2341,9 +2326,12 @@ button#dropdownMenuButton {
     .button-nav {
         width: 35%;
     }
-
+    .col-img-interview {
+        max-width: 100%;
+    }
     .col-text-interview {
         position: absolute;
+        max-width: 100%;
         padding-top: 50px;
         padding: 20px;
         text-align: center;
