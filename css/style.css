@@ -79,7 +79,7 @@ body {
 }
 
 .nav-item:last-child:hover {
-background-color: #f95738cf;
+    background-color: #f95738cf;
 }
 
 .nav-item:last-child {
@@ -125,6 +125,10 @@ background-color: #f95738cf;
 
 .navbar-jquery {
     background-color: #FFFFFF !important
+}
+
+.about-page .nav-item:hover #navbarDropdown::after {
+    border-color: #333333 ;
 }
 
 #navbarDropdown::after {
@@ -227,10 +231,7 @@ background-color: #f95738cf;
 /*end baner-title-text */
 
 /* interview */
-.container-interview {
-    max-width: 100%;
-    padding: 0px;
-}
+
 
 .title-interview {
     margin-bottom: 37px;
@@ -263,6 +264,10 @@ background-color: #f95738cf;
     text-decoration: none;
 }
 
+.img-interview-homepage {
+    width: 50vw;
+    height: 53vw;
+}
 /* end interview */
 /* slide */
 .slide-overview {
@@ -583,6 +588,7 @@ background-color: #f95738cf;
     color: #FFFFFF;
     font-size: 18px;
     font-family: publicsans-400;
+    transition: 0.4s;
 }
 
 .container-articles {
@@ -618,6 +624,7 @@ background-color: #f95738cf;
 .content-article-height {
     position: absolute;
     bottom: 0px;
+    transition: 0.4s;
     padding-bottom: 22px;
     padding-top: 37px;
     padding-left: 35px;
@@ -630,6 +637,7 @@ background-color: #f95738cf;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    transition: 0.4s;
 }
 
 .backgroud-bottom-height {
@@ -674,6 +682,11 @@ background-color: #f95738cf;
     color: #FFFFFF;
     background: transparent;
     z-index: 3;
+
+}
+
+.card-article-height:hover .text-article-height {
+    -webkit-line-clamp :inherit;
 }
 
 .card-article-height:hover .backgroud-bottom-height {
@@ -822,6 +835,8 @@ background-color: #f95738cf;
 }
 
 footer {
+    padding-top: 81px;
+    padding-bottom: 46px;
     margin-top: 75px;
     background-color: #006634;
 }
@@ -832,19 +847,12 @@ footer {
 
 .logo-footer {
     display: inline-block;
+    margin-right: 52px;
 }
 
-.img-logo-footer {
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
 
 .text-footer-left {
     display: inline-block;
-}
-
-.text-footer-left {
-    padding-top: 78px;
 }
 
 .title-text-footer-left {
@@ -863,13 +871,12 @@ footer {
 }
 
 .col-footer-right {
-    padding-top: 86px;
     text-align: right;
 }
 
 
 .social-logo-footer {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
 }
 
 .social-logo-footer img {
@@ -1378,7 +1385,7 @@ button#dropdownMenuButton {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 
 .container-banner-about {
@@ -1594,6 +1601,10 @@ button#dropdownMenuButton {
 
 /* end about */
 @media only screen and (max-width:1200px) {
+    .container-banner {
+        top: 36%;
+    }
+
     .text-slide-item-about {
         width: 100%;
     }
@@ -1668,6 +1679,11 @@ button#dropdownMenuButton {
 
 
 @media screen and (max-width: 992px) {
+    .block-img-header {
+        margin: auto;
+        width: 50% !important;
+    }
+
     .interview-about {
         padding-bottom: 21px;
         padding-top: 20px;
@@ -1903,11 +1919,6 @@ button#dropdownMenuButton {
         padding-bottom: 747px;
     }
 
-    .img-banner {
-        width: 100%;
-        margin-top: 0px;
-    }
-
     .link-of-banner {
         text-align: center;
     }
@@ -2092,6 +2103,7 @@ button#dropdownMenuButton {
         padding-top: 50px;
         text-align: center;
         padding: 7px;
+        padding-top: 55px
     }
 
     .slider {
@@ -2129,6 +2141,7 @@ button#dropdownMenuButton {
     .special-text-slide {
         font-size: 18px;
     }
+
 }
 
 
@@ -2137,9 +2150,14 @@ button#dropdownMenuButton {
         width: 30%;
     }
 }
-
 @media screen and (max-width: 576px) {
-
+    .block-img-header {
+        width: 90% !important;
+    }
+    .img-interview-homepage {
+        width: 100vw;
+        height: 100vw;
+    }
     /* homepage */
     .slide-overview {
         padding-top: 90px;
@@ -2308,9 +2326,12 @@ button#dropdownMenuButton {
     .button-nav {
         width: 35%;
     }
-
+    .col-img-interview {
+        max-width: 100%;
+    }
     .col-text-interview {
         position: absolute;
+        max-width: 100%;
         padding-top: 50px;
         padding: 20px;
         text-align: center;

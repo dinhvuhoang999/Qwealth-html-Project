@@ -2,6 +2,7 @@ $(function () {
   $(window).scroll(function () {
     if ($('body,html').scrollTop() > 0) {
       $('.navbar-qweath').addClass('background-nav-scroll')
+      $('.about-page .nav-link').css('color', '#333333')
     } else {
       $('.navbar-qweath').removeClass('background-nav-scroll')
 
@@ -133,10 +134,9 @@ $(document).ready(function () {
 // 
 $(document).ready(function () {
   $(".link-learn-banner").click(function () {
-    console.log('da click');
-    $('html, body').animate({scrollTop:$(document).height()}, 'slow');
-
-
+    $('html, body').animate({
+      scrollTop: $('.slide-overview').offset().top
+    }, 800)
   })
 })
 // slide
