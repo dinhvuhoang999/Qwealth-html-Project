@@ -128,7 +128,7 @@ body {
 }
 
 .about-page .nav-item:hover #navbarDropdown::after {
-    border-color: #333333 ;
+    border-color: #333333;
 }
 
 #navbarDropdown::after {
@@ -268,6 +268,7 @@ body {
     width: 50vw;
     height: 53vw;
 }
+
 /* end interview */
 /* slide */
 .slide-overview {
@@ -295,7 +296,6 @@ body {
     padding: 0px;
     padding-top: 142px;
     z-index: 3;
-    max-width: 1020px;
 }
 
 .text-slide {
@@ -686,7 +686,7 @@ body {
 }
 
 .card-article-height:hover .text-article-height {
-    -webkit-line-clamp :inherit;
+    -webkit-line-clamp: inherit;
 }
 
 .card-article-height:hover .backgroud-bottom-height {
@@ -1600,6 +1600,13 @@ button#dropdownMenuButton {
 
 
 /* end about */
+@media only screen and (min-width: 1200px) {
+    .container-side-overview {
+        max-width: 1020px;
+    }
+}
+
+
 @media only screen and (max-width:1200px) {
     .container-banner {
         top: 36%;
@@ -1675,10 +1682,20 @@ button#dropdownMenuButton {
     .input-name {
         margin-bottom: 20px;
     }
+
+    .banner {
+        padding-bottom: 87px
+    }
 }
 
 
 @media screen and (max-width: 992px) {
+    .img-banner {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
     .block-img-header {
         margin: auto;
         width: 50% !important;
@@ -1916,6 +1933,7 @@ button#dropdownMenuButton {
     }
 
     .banner {
+        margin-top: 40px;
         padding-bottom: 747px;
     }
 
@@ -2067,6 +2085,7 @@ button#dropdownMenuButton {
 
     .logo-footer {
         display: block;
+        margin-right: 0px;
     }
 
     .img-logo-footer {
@@ -2082,6 +2101,8 @@ button#dropdownMenuButton {
 
     .col-footer-left {
         text-align: center;
+        flex-direction: column;
+
     }
 
     .col-lg-6.col-footer-right {
@@ -2099,10 +2120,9 @@ button#dropdownMenuButton {
     }
 
     .container-side-overview {
-        margin: 0px;
         padding-top: 50px;
         text-align: center;
-        padding: 7px;
+        padding: 28px;
         padding-top: 55px
     }
 
@@ -2141,7 +2161,6 @@ button#dropdownMenuButton {
     .special-text-slide {
         font-size: 18px;
     }
-
 }
 
 
@@ -2150,14 +2169,17 @@ button#dropdownMenuButton {
         width: 30%;
     }
 }
+
 @media screen and (max-width: 576px) {
     .block-img-header {
         width: 90% !important;
     }
+
     .img-interview-homepage {
         width: 100vw;
         height: 100vw;
     }
+
     /* homepage */
     .slide-overview {
         padding-top: 90px;
@@ -2326,11 +2348,14 @@ button#dropdownMenuButton {
     .button-nav {
         width: 35%;
     }
+
     .col-img-interview {
         max-width: 100%;
     }
+
     .col-text-interview {
         position: absolute;
+        bottom: 10px;
         max-width: 100%;
         padding-top: 50px;
         padding: 20px;
@@ -2380,4 +2405,5 @@ button#dropdownMenuButton {
     .text-article-short {
         font-size: 10px;
     }
+
 }
