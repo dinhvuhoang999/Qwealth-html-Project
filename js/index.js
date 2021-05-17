@@ -56,8 +56,8 @@ $(document).ready(function () {
       },
       messages: {
         email: {
-          required: "provide email",
-          regex: "wrong style email"
+          required: "Please provide an email",
+          regex: "Wrong style email"
         }
       },
       submitHandler: function (form) {
@@ -81,15 +81,15 @@ $(document).ready(function () {
       },
       messages: {
         name: {
-          required: "Please enter your Name"
+          required: "Please provide your name"
         },
 
         email: {
-          required: "Please provide a Email",
-          regex: "Wrong style Email",
+          required: "Please provide an email",
+          regex: "Wrong style email",
         },
         mes: {
-          required: "Please provide a Message",
+          required: "Please provide a message",
         }
 
       },
@@ -135,8 +135,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".link-learn-banner").click(function () {
     $('html, body').animate({
-      scrollTop: $('.slide-overview').offset().top
-    }, 800)
+      scrollTop: $('.col-text-interview').offset().top
+    }, 1000)
   })
 })
 // slide
