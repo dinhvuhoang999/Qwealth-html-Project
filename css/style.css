@@ -649,9 +649,13 @@ body {
 }
 
 .title-article-height {
+    color: #333333;
     margin-bottom: 20px;
     font-family: Poppins-600;
     font-size: 24px;
+}
+.articles  a {
+    color: #FFFFFF;
 }
 
 .card-article-short:hover .backgroud-bottom-short {
@@ -835,8 +839,8 @@ body {
 }
 
 footer {
-    padding-top: 81px;
-    padding-bottom: 46px;
+    padding-top: 78px;
+    padding-bottom: 59px;
     margin-top: 75px;
     background-color: #006634;
 }
@@ -889,8 +893,8 @@ footer {
     font-size: 18px;
 }
 
-.text-footer-right p {
-    display: inline-block;
+.text-footer-right a {
+    color: #FFFFFF;
     margin-right: 10px;
 }
 
