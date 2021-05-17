@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-qweath {
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .nav-item {
@@ -101,7 +101,7 @@ body {
 }
 
 .nav-item.dropdown {
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .nav-item.dropdown img {
@@ -523,7 +523,7 @@ body {
     color: #FFFFFF;
     font-family: publicsans-700;
     background-color: #006634;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .button-member-card:hover {
@@ -588,7 +588,7 @@ body {
     color: #FFFFFF;
     font-size: 18px;
     font-family: publicsans-400;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .container-articles {
@@ -602,7 +602,7 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    transition: 0.4s;
+    transition: 0.3s;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40.79%, #000000 100%);
     z-index: 1;
 }
@@ -624,7 +624,7 @@ body {
 .content-article-height {
     position: absolute;
     bottom: 0px;
-    transition: 0.4s;
+    transition: 0.3s;
     padding-bottom: 22px;
     padding-top: 37px;
     padding-left: 35px;
@@ -637,7 +637,7 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .backgroud-bottom-height {
@@ -645,7 +645,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .title-article-height {
@@ -663,10 +663,8 @@ body {
     opacity: 90%;
 }
 
-.card-article-short:hover h1 {
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: unset;
-    overflow: visible;
+.card-article-short:hover .title-article-short {
+    -webkit-line-clamp: 3;
 }
 
 .card-article-short:hover p {
@@ -689,6 +687,9 @@ body {
 
 }
 
+.card-article-height:hover .title-article-height {
+    color: #FFFFFF;
+}
 .card-article-height:hover .text-article-height {
     -webkit-line-clamp: inherit;
 }

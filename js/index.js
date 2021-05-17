@@ -56,8 +56,8 @@ $(document).ready(function () {
       },
       messages: {
         email: {
-          required: "Please provide a Email",
-          regex: "Wrong style Email"
+          required: "Please provide an email",
+          regex: "Wrong style email"
         }
       },
       submitHandler: function (form) {
@@ -81,15 +81,15 @@ $(document).ready(function () {
       },
       messages: {
         name: {
-          required: "Please provide your Name"
+          required: "Please provide your name"
         },
 
         email: {
-          required: "Please provide a Email",
-          regex: "Wrong style Email",
+          required: "Please provide an email",
+          regex: "Wrong style email",
         },
         mes: {
-          required: "Please provide a Message",
+          required: "Please provide a message",
         }
 
       },
