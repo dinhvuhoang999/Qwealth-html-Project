@@ -24,15 +24,6 @@
     src: url('../font/Public_Sans/static/PublicSans-Regular.ttf');
 }
 
-.a {
-    display: flex;
-    flex-direction: column;
-}
-
-.first {
-    flex: 1;
-}
-
 @font-face {
     font-family: Poppins-700;
     src: url('../font/Poppins-Font/Poppins-Bold.ttf');
@@ -2206,10 +2197,6 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 576px) {
-    .slide-homepage .slick-slide img {
-        max-width: 255px;
-    }
-
     .slide-homepage .slick-slide {
         transition: all ease-in-out .3s;
         margin-right: 20px;
