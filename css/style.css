@@ -24,7 +24,6 @@
     src: url('../font/Public_Sans/static/PublicSans-Regular.ttf');
 }
 
-
 @font-face {
     font-family: Poppins-700;
     src: url('../font/Poppins-Font/Poppins-Bold.ttf');
@@ -346,9 +345,11 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     margin-right: 40px;
 }
 
+.slide-homepage .slick-track {
+    display: flex;
+    align-items: flex-end;
+}
 .slide-homepage .slick-slide img {
-    max-width: 555px;
-    max-height: 470px;
     box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 28%), 0 6px 20px 0 rgb(1 1 1 / 19%);
 }
 
@@ -2281,9 +2282,8 @@ button#dropdownMenuButton {
 
 @media screen and (max-width: 575.9px) {
     .slide-homepage .slick-slide img {
-        max-width: 255px;
+        max-width: 200px;
     }
-
     .slide-homepage .slick-slide {
         transition: all ease-in-out .3s;
         margin-right: 20px;
