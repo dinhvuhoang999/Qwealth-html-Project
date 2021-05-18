@@ -149,7 +149,7 @@ body {
 /* banner */
 .banner {
     position: relative;
-    padding-top: calc(100% * 917 / 1440);
+    padding-top: min(900px, calc(100% * 917 / 1440));
     overflow: hidden;
     height: 0;
 }
@@ -274,7 +274,9 @@ body {
 
 .img-interview-homepage {
     width: 50vw;
-    height: 55vw;
+    height: min(55vw, 768px);
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /* end interview */
