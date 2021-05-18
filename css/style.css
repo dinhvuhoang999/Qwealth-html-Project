@@ -343,15 +343,6 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     margin-right: 40px;
 }
 
-.a {
-    display: flex;
-    flex-direction: column;
-}
-
-.first {
-    flex: 1;
-}
-
 .slide-homepage .slick-slide img {
     box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 28%), 0 6px 20px 0 rgb(1 1 1 / 19%);
 }
