@@ -24,6 +24,14 @@
     src: url('../font/Public_Sans/static/PublicSans-Regular.ttf');
 }
 
+.a {
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    flex: 1;
+}
 
 @font-face {
     font-family: Poppins-700;
@@ -173,16 +181,23 @@ body {
 }
 
 .img-banner {
-    width: 100%;
-    margin-top: 171px;
+    width: min(100%, 390px);
 }
 
 .container-banner {
     position: absolute;
-    top: 50%;
+    height: 100%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 1195px;
+}
+
+.container-banner .banner-text-wrapper {
+    max-width: 600px;
 }
 
 .title-banner {
@@ -337,9 +352,17 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     margin-right: 40px;
 }
 
+.a {
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    flex: 1;
+}
+
 .slide-homepage .slick-slide img {
-    max-width: 555px;
-    max-height: 470px;
+    max-height: 450px;
     box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 28%), 0 6px 20px 0 rgb(1 1 1 / 19%);
 }
 
@@ -1621,8 +1644,8 @@ button#dropdownMenuButton {
 
 
 @media only screen and (max-width:1200px) {
-    .container-banner {
-        top: 36%;
+    .container-banner .banner-text-wrapper {
+        margin: auto;
     }
 
     .text-slide-item-about {
@@ -1704,9 +1727,9 @@ button#dropdownMenuButton {
 
 @media screen and (max-width: 992px) {
     .img-banner {
-        width: 70%;
+        width: min(100%, 500px);
+        margin: 20px auto;
         display: block;
-        margin: auto;
     }
 
     .block-img-header {
@@ -1946,7 +1969,7 @@ button#dropdownMenuButton {
     }
 
     .banner {
-        margin-top: 40px;
+        margin-top: 70px;
         padding-bottom: 747px;
     }
 
