@@ -347,12 +347,7 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 .slide-homepage .slick-slide img {
     max-width: 555px;
     max-height: 470px;
-    box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 35%), 0 6px 20px 0 rgb(1 1 1 / 19%);
-}
-
-.slick-slide.slick-current.slick-active {
-    width: 555px;
-    height: 470px;
+    box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 28%), 0 6px 20px 0 rgb(1 1 1 / 19%);
 }
 
 .slide-homepage .slick-list.draggable {
@@ -2196,6 +2191,15 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 576px) {
+    .slide-homepage .slick-slide img {
+        max-width: 255px;
+    }
+
+    .slide-homepage .slick-slide {
+        transition: all ease-in-out .3s;
+        margin-right: 20px;
+    }
+
     .block-img-header {
         width: 90% !important;
     }
