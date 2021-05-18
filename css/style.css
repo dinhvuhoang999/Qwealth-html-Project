@@ -61,6 +61,7 @@ body {
 
 .navbar-qweath {
     transition: 0.3s;
+    z-index: 10;
 }
 
 .nav-item {
@@ -266,7 +267,7 @@ body {
 
 .img-interview-homepage {
     width: 50vw;
-    height: 53vw;
+    height: 55vw;
 }
 
 /* end interview */
@@ -323,20 +324,28 @@ body {
     width: 100%;
 }
 
+section.variable.slider.slide-homepage.slick-initialized.slick-slider {
+    margin-top: 44px;
+}
+
 .slide-homepage .slick-slide img {
     width: 100%;
 }
 
 .slide-homepage .slick-slide {
     transition: all ease-in-out .3s;
-
+    margin-right: 40px;
 }
 
 .slide-homepage .slick-slide img {
     max-width: 555px;
-    max-height: 393px;
+    max-height: 470px;
+    box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 35%), 0 6px 20px 0 rgb(1 1 1 / 19%);
 }
-
+.slick-slide.slick-current.slick-active {
+    width: 555px;
+    height: 470px;
+}
 .slide-homepage .slick-list.draggable {
     overflow: visible;
 }
@@ -654,7 +663,8 @@ body {
     font-family: Poppins-600;
     font-size: 24px;
 }
-.articles  a {
+
+.articles a {
     color: #FFFFFF;
 }
 
@@ -690,6 +700,7 @@ body {
 .card-article-height:hover .title-article-height {
     color: #FFFFFF;
 }
+
 .card-article-height:hover .text-article-height {
     -webkit-line-clamp: inherit;
 }
