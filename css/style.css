@@ -351,8 +351,12 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 }
 
 .slide-homepage .slick-slide img {
-    max-width :280px;
+    max-width: 280px;
     box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 28%), 0 6px 20px 0 rgb(1 1 1 / 19%);
+}
+
+.slide-homepage .slick-slide img:first-child {
+    max-width: 320px
 }
 
 .slide-homepage .slick-list.draggable {
@@ -1547,14 +1551,9 @@ button#dropdownMenuButton {
 
 .about-slide .slick-slide {
     width: 900px;
-    margin: 20px;
-}
-
-.slide-item-about {
-    width: auto !important;
     border-radius: 8px;
     background-color: #FFFFFF;
-    margin-bottom: 132px;
+    margin: 20px 20px 132px;
 }
 
 .background-slide-about {
