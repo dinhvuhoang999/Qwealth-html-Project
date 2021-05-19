@@ -351,12 +351,15 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 }
 
 .slide-homepage .slick-slide img {
-    max-width: 280px;
     box-shadow: 15px 2px 15px 10px rgb(0 0 0 / 28%), 0 6px 20px 0 rgb(1 1 1 / 19%);
 }
 
-.slide-homepage .slick-slide img:first-child {
-    max-width: 320px
+.slide-homepage .slick-slide {
+    max-width: 280px;
+}
+
+.slide-homepage .slick-slide:first-child {
+    max-width: 320px;
 }
 
 .slide-homepage .slick-list.draggable {
