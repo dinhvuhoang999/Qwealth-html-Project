@@ -1361,6 +1361,9 @@ button#dropdownMenuButton {
     display: inline-block;
     border-radius: 50%;
     margin-right: 9px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
 }
 
 .infomation-author p {
