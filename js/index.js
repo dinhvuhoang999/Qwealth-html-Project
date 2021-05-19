@@ -135,7 +135,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".link-learn-banner").click(function () {
     $('html, body').animate({
-      scrollTop: $('.col-text-interview').offset().top
+      scrollTop: $('.interview').offset().top -70
     }, 1000)
   })
 })
