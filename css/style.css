@@ -378,10 +378,6 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     justify-content: space-between;
 }
 
-.container-card {
-    max-width: 1180px;
-}
-
 .col-text-card {
     display: flex;
     flex-direction: column;
@@ -422,17 +418,6 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     overflow: hidden;
     border-radius: 5px;
     background-color: #F95738;
-}
-
-.rotate-div-card-premium {
-    position: absolute;
-    top: 337px;
-    left: 182px;
-    width: 300px;
-    height: 500px;
-    transform: rotate(-149.17deg);
-    background: linear-gradient(180deg, #F24A2A 0%, rgba(242, 74, 42, 0) 100%);
-    z-index: 1;
 }
 
 .card-premium ul {
@@ -1643,6 +1628,9 @@ button#dropdownMenuButton {
 @media only screen and (min-width: 1200px) {
     .container-side-overview {
         max-width: 1020px;
+    }
+    .container-card {
+        max-width: 1180px;
     }
 }
 
