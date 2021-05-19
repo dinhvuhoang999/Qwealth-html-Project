@@ -395,6 +395,15 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     font-size: 38px;
 }
 
+.container-card .row-card-sale .card {
+    border: none;
+}
+
+.card.card-member {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 .content-card {
     color: #3A3A3A;
     font-family: publicsans-400;
@@ -1784,6 +1793,9 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 991.9px) {
+    .card.card-member {
+        border-radius: .25rem;
+    }
     .container-banner .banner-text-wrapper {
         margin: auto;
     }
