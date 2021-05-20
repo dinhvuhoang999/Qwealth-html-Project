@@ -1026,6 +1026,8 @@ footer {
 .author-blog img {
     float: left;
     border-radius: 50%;
+    width: 20px;
+    height: 20px;
 }
 
 .author-blog p {
@@ -1107,7 +1109,7 @@ footer {
     bottom: 5.6%;
 }
 
-.slide-blog .slick-slide img {
+.img-slide-item-blog {
     border-radius: 3px;
 }
 
@@ -1274,6 +1276,8 @@ button#dropdownMenuButton {
     display: inline-block;
     border-radius: 50%;
     margin-right: 3px;
+    width: 20px;
+    height: 20px;
 }
 
 .author-slide-archide p {
