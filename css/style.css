@@ -1765,6 +1765,7 @@ button#dropdownMenuButton {
 @media only screen and (max-width:1199.9px) {
     .col-content-blog-detail figure img {
         height: 100%;
+        font-size: 0px;
     }
 
     .text-slide-item-about {
