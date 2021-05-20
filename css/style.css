@@ -593,6 +593,8 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 
 .card-article-short img {
     border-radius: 5px;
+    height: 330px;
+    object-fit :cover;
 }
 
 .title-article-short {
@@ -1832,6 +1834,11 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 991.9px) {
+    .content-article-height {
+        padding-left: 65px;
+        padding-right: 65px;
+    
+    }
     .col-content-blog-detail figure img {
         margin-top: 50px;
     }
@@ -2355,6 +2362,10 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 575.9px) {
+    .content-article-height {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
     .col-content-blog-detail figcaption {
         text-align: center;
     }
