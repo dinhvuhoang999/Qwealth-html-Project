@@ -913,7 +913,8 @@ footer {
     font-size: 25px;
 }
 
-.text-footer-left p {
+.text-footer-left a {
+    display: block;
     margin: 0px;
     font-family: publicsans-400;
     font-size: 16px;
@@ -1401,7 +1402,7 @@ button#dropdownMenuButton {
 .col-content-blog-detail {
     font-family: publicsans-400;
     font-size: 20px;
-    padding: 0px;
+    padding: 8px;
 }
 
 .col-content-blog-detail p {
@@ -1759,9 +1760,10 @@ button#dropdownMenuButton {
 }
 
 @media only screen and (max-width:1199.9px) {
-    .col-content-blog-detail {
-        padding: 0px 15px 0px 15px;
+    .col-content-blog-detail figure img {
+        height: 100%;
     }
+    
     .col-content-blog-detail p{
             width: 77%;
     }
@@ -2357,6 +2359,13 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 575.9px) {
+    .col-content-blog-detail figcaption {
+        text-align: center;
+    }
+
+    .col-content-blog-detail p {
+        text-align: center;
+    }
     .slide-homepage .slick-slide img {
         max-width: 200px;
     }
