@@ -1161,7 +1161,9 @@ footer {
 .author-slide-blog {
     display: inline-block;
 }
-
+.author-slide-blog a {
+    text-decoration: none;
+}
 .date-slide-blog {
     margin-right: 187px;
     font-family: publicsans-400;
