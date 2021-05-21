@@ -594,7 +594,7 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 .card-article-short img {
     border-radius: 5px;
     height: 330px;
-    object-fit :cover;
+    object-fit: cover;
 }
 
 .title-article-short {
@@ -941,6 +941,8 @@ footer {
 /* blog */
 .big-img-blog {
     margin-bottom: 35px;
+    height: 426px;
+    object-fit: cover;
 }
 
 /* article */
@@ -995,7 +997,7 @@ footer {
 
 .item-blog-article {
     display: flex;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
 }
 
 .title-item-article a {
@@ -1020,6 +1022,7 @@ footer {
 }
 
 .img-aritcle {
+    width: 105px;
     height: 105px;
 }
 
@@ -1100,22 +1103,26 @@ footer {
     position: absolute;
     right: 55.5%;
     bottom: 5.6%;
+    margin: 0 30px;
 }
 
 .slide-blog .arrow-next {
     display: inline-block;
     position: absolute;
     left: 55.5%;
+    margin: 0 30px;
     bottom: 5.6%;
 }
 
 .img-slide-item-blog {
+    height: calc(271/1440 *100vw);
     border-radius: 3px;
 }
 
 .slide-blog .arrow-pre span {
     color: #757575;
     font-size: 13px;
+
 }
 
 .slide-blog .arrow-next span {
@@ -1252,6 +1259,13 @@ button#dropdownMenuButton {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     margin-bottom: 11px;
+}
+.archived-top-img {
+    height: 208px;
+}
+
+.archived .container-archived .topic-archied .select-archived .dropdown-archived .item-select {
+    cursor: pointer;
 }
 
 .row-archived {
@@ -1522,9 +1536,11 @@ button#dropdownMenuButton {
     width: 38px;
     height: 41px;
 }
+
 .info-author {
     text-transform: capitalize;
 }
+
 .container-slide-about {
     max-width: 1030px;
 }
@@ -1786,11 +1802,6 @@ button#dropdownMenuButton {
         margin-left: 0px;
         width: calc(100%/3);
     }
-
-    .archived-top-img {
-        width: 100%;
-    }
-
     /* end BlogReposive */
 
     .col-card.col-card-member {
@@ -1838,11 +1849,16 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 991.9px) {
+    .big-img-blog {
+        height: 50%;
+    }
+
     .content-article-height {
         padding-left: 65px;
         padding-right: 65px;
-    
+
     }
+
     .col-content-blog-detail figure img {
         margin-top: 50px;
     }
@@ -2366,10 +2382,15 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 575.9px) {
+    .col-article {
+        margin-top: 40px;
+    }
+
     .content-article-height {
         padding-left: 37px;
         padding-right: 37px;
     }
+
     .col-content-blog-detail figcaption {
         text-align: center;
     }
@@ -2484,6 +2505,8 @@ button#dropdownMenuButton {
     }
 
     .row-archived {
+        padding-left: 18px;
+        padding-right: 18px;
         text-align: center;
         flex-direction: column;
     }
