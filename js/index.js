@@ -123,19 +123,19 @@ $(function () {
 
 $(document).ready(function () {
   var a = $(".item-select").first().text();
-
   $("#dropdownMenuButton").text(a);
   $(".dropdown-item").click(function () {
     const text = this.outerText;
     console.log(text)
     $("#dropdownMenuButton").text(this.outerText);
+    
   });
 });
 // 
 $(document).ready(function () {
   $(".link-learn-banner").click(function () {
     $('html, body').animate({
-      scrollTop: $('.interview').offset().top -70
+      scrollTop: $('.interview').offset().top - 70
     }, 1000)
   })
 })
@@ -152,3 +152,8 @@ $(function () {
     variableWidth: true,
   });
 });
+
+$(function () {
+  console.log($('.blog-slide .slick-dots li').width());
+  console.log($('.slick-dots li').length);
+})
