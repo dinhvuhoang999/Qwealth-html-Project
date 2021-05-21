@@ -124,12 +124,10 @@ $(function () {
 $(document).ready(function () {
   var a = $(".item-select").first().text();
   $("#dropdownMenuButton").text(a);
-  console.log(a);
-  this.val = 1;
-  $(".item-select").remove(this.val)
   $(".dropdown-item").click(function () {
     const text = this.outerText;
     $("#dropdownMenuButton").text(this.outerText);
+    console.log(text);
   });
 });
 // 
