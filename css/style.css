@@ -1161,7 +1161,9 @@ footer {
 .author-slide-blog {
     display: inline-block;
 }
-
+.author-slide-blog a {
+    text-decoration: none;
+}
 .date-slide-blog {
     margin-right: 187px;
     font-family: publicsans-400;
@@ -1260,8 +1262,9 @@ button#dropdownMenuButton {
     -webkit-box-orient: vertical;
     margin-bottom: 11px;
 }
+
 .archived-top-img {
-    height: 208px;
+    height: calc(208/1440 *100vw);
 }
 
 .archived .container-archived .topic-archied .select-archived .dropdown-archived .item-select {
@@ -1802,6 +1805,7 @@ button#dropdownMenuButton {
         margin-left: 0px;
         width: calc(100%/3);
     }
+
     /* end BlogReposive */
 
     .col-card.col-card-member {
@@ -2382,6 +2386,11 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 575.9px) {
+
+    .archived-top-img {
+        height: 208px;
+    }
+
     .col-article {
         margin-top: 40px;
     }
