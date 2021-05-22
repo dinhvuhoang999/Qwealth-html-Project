@@ -1213,12 +1213,12 @@ footer {
     display: inline-block;
     font-family: publicsans-400;
     color: #757575;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
     font-size: 12px;
     text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 114px;
+    white-space: nowrap;
 }
 
 /* end slide blog */
@@ -2168,11 +2168,11 @@ button#dropdownMenuButton {
     }
 
     .date-slide-blog {
-        margin-right: 80px;
         font-size: 8px;
     }
 
     .author-slide-blog p {
+        width: 72px;
         font-size: 8px;
     }
 
@@ -2469,6 +2469,9 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 575.9px) {
+    .description-item-blog {
+        flex-direction: column;
+    }
     .author-slide-archide p {
         width: 96px;
     }
