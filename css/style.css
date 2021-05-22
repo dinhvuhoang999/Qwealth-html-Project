@@ -1080,6 +1080,18 @@ footer {
     margin-top: 55px;
 }
 
+.slide-blog .arrow-pre:hover i {
+    color: #75757570;
+}
+
+.slide-blog .arrow-next:hover i {
+    color: #75757570;
+}
+
+.slide-blog .slick-dots:hover li button:before {
+    color: #757575;
+}
+
 .slide-blog .slick-slide {
     margin: 0px 25px;
 }
@@ -2472,6 +2484,7 @@ button#dropdownMenuButton {
     .description-item-blog {
         flex-direction: column;
     }
+
     .author-slide-archide p {
         width: 96px;
     }
