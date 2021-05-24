@@ -77,7 +77,7 @@ body {
     border-radius: 5px;
 }
 
-.nav-item:last-child:hover {
+.button-nav:last-child:hover {
     background-color: #f95738cf;
 }
 
