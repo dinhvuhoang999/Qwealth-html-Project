@@ -40,8 +40,6 @@ $(document).ready(function () {
 
   $(function () {
     $.validator.addMethod('regex', function (value, element, param) {
-        console.log(param);
-        console.log(value);
         return this.optional(element) ||
           value.match(typeof param == 'string' ? new RegExp(param) : param);
       },
@@ -62,7 +60,6 @@ $(document).ready(function () {
       },
       submitHandler: function (form) {
         form.submit();
-        console.log("submit");
       }
     });
 
@@ -95,7 +92,6 @@ $(document).ready(function () {
       },
       submitHandler: function (form) {
         form.submit();
-        console.log("submit");
       },
     });
   });
@@ -104,7 +100,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".dropdown-item").click(function () {
     $(".dropdown-item").val("1");
-    console.log($(".dropdown-item").value);
   });
 });
 
@@ -124,14 +119,11 @@ $(function () {
 $(document).ready(function () {
   var a = $(".item-select").first().text();
   $("#dropdownMenuButton").text(a);
-  console.log(a);
-  this.val = 1;
-  $(".item-select").remove(this.val)
   $(".dropdown-item").click(function () {
     const text = this.outerText;
     $("#dropdownMenuButton").text(this.outerText);
   });
-});
+})
 // 
 $(document).ready(function () {
   $(".link-learn-banner").click(function () {
@@ -153,8 +145,3 @@ $(function () {
     variableWidth: true,
   });
 });
-
-// $(function () {
-//   console.log($('.blog-slide .slick-dots li').width());
-//   console.log($('.slick-dots li').length);
-// })

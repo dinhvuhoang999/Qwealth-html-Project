@@ -60,39 +60,43 @@ body {
 
 .navbar-qweath {
     transition: 0.3s;
-    z-index: 10;
-}
-
-.nav-item {
-    margin-left: 5px;
-    margin-right: 10px;
-    padding: 14px 18px 10px 17px;
-    font-family: publicsans-500;
-    line-height: 18px;
-    transition: 0.5s;
-}
-
-.nav-item:hover {
-    background-color: #f3f3f4;
-    border-radius: 5px;
-}
-
-.nav-item:last-child:hover {
-    background-color: #f95738cf;
 }
 
 .nav-item:last-child {
     margin-right: 0px;
 }
 
+.nav-item {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-family: publicsans-500;
+    line-height: 18px;
+    transition: 0.3s;
+}
+
 .nav-link {
-    padding: 0px !important;
+    display: inline-block;
+    padding: 14px 19px !important;
+    line-height: 1;
     color: #333333 !important;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    border-radius: 5px;
+    background-color: #EFF2F0;
+}
+
+.button-nav:hover .nav-link {
+    background-color: unset;
+}
+
+.button-nav:hover {
+    background-color: #f82b04ad;
 }
 
 .button-nav {
-    padding: 14px 18px 10px 17px;
     margin-left: 22px;
     border-radius: 5px;
     font-family: publicsans-700;
@@ -652,6 +656,9 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 }
 
 .content-article-height {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
     position: absolute;
     bottom: 0px;
     transition: 0.3s;
@@ -660,6 +667,11 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
     padding-left: 35px;
     padding-right: 35px;
     background-color: #F4F3EC;
+}
+
+.content-article-height a {
+    flex: 1;
+    transition: 0.3s;
 }
 
 .text-article-height {
@@ -712,10 +724,15 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 }
 
 .card-article-height:hover .content-article-height {
+    height: 50%;
     color: #FFFFFF;
     background: transparent;
     z-index: 3;
 
+}
+
+.content-article-height:hover a {
+    flex: none;
 }
 
 .card-article-height:hover .title-article-height {
@@ -723,7 +740,7 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 }
 
 .card-article-height:hover .text-article-height {
-    -webkit-line-clamp: inherit;
+    -webkit-line-clamp: 6;
 }
 
 .card-article-height:hover .backgroud-bottom-height {
@@ -972,7 +989,10 @@ footer {
 }
 
 .title-article-spotlight a {
-    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     margin-bottom: 16px;
     padding-right: 100px;
     font-size: 40px;
@@ -1038,6 +1058,10 @@ footer {
     text-transform: capitalize;
     font-family: publicsans-400;
     float: left;
+    text-overflow: ellipsis;
+    width: 106px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /* end article */
@@ -1058,6 +1082,18 @@ footer {
     padding: 0px;
     margin: 100px auto;
     margin-top: 55px;
+}
+
+.slide-blog .arrow-pre:hover i {
+    color: #75757570;
+}
+
+.slide-blog .arrow-next:hover i {
+    color: #75757570;
+}
+
+.slide-blog .slick-dots:hover li button:before {
+    color: #757575;
 }
 
 .slide-blog .slick-slide {
@@ -1082,6 +1118,10 @@ footer {
     font-family: publicsans-700;
     color: #006634;
     font-size: 28px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .title-href-slide-item-blog:hover {
@@ -1161,11 +1201,18 @@ footer {
 .author-slide-blog {
     display: inline-block;
 }
+
 .author-slide-blog a {
+    display: flex;
     text-decoration: none;
 }
+
+.description-item-blog {
+    display: flex;
+    justify-content: space-between;
+}
+
 .date-slide-blog {
-    margin-right: 187px;
     font-family: publicsans-400;
     font-size: 12px;
     color: #757575;
@@ -1184,6 +1231,10 @@ footer {
     color: #757575;
     font-size: 12px;
     text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 114px;
+    white-space: nowrap;
 }
 
 /* end slide blog */
@@ -1234,7 +1285,11 @@ button#dropdownMenuButton {
 }
 
 .title-item-archied {
-    display: block;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     margin-top: 20px;
     margin-bottom: 10px;
     font-family: Poppins-600;
@@ -1244,6 +1299,18 @@ button#dropdownMenuButton {
 
 .title-item-archied:hover {
     color: #333333;
+}
+
+.archived-blog-inner {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+}
+
+.content-archide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .col-archived {
@@ -1264,11 +1331,19 @@ button#dropdownMenuButton {
 }
 
 .archived-top-img {
+    border-radius: 5px;
     height: calc(208/1440 *100vw);
 }
 
 .archived .container-archived .topic-archied .select-archived .dropdown-archived .item-select {
     cursor: pointer;
+}
+
+
+.description-item-archide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .row-archived {
@@ -1282,11 +1357,14 @@ button#dropdownMenuButton {
     font-family: publicsans-400;
     color: #757575;
     font-size: 12px;
-    margin-right: 77px;
 }
 
-.author-slide-archide {
-    display: inline-block;
+.author-slide-archide a {
+    display: flex;
+}
+
+.author-slide-archide a {
+    text-decoration: none;
 }
 
 .author-slide-archide img {
@@ -1303,6 +1381,10 @@ button#dropdownMenuButton {
     color: #757575;
     font-size: 12px;
     text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 98px;
+    white-space: nowrap;
 }
 
 /* end archived */
@@ -1361,6 +1443,10 @@ button#dropdownMenuButton {
     padding-top: calc(506 /1440 *100vw);
     padding-bottom: 19px;
     padding-right: 330px;
+}
+
+.content-banner-blog-details a {
+    text-decoration: #FFFFFF;
 }
 
 .text-content {
@@ -1797,10 +1883,6 @@ button#dropdownMenuButton {
         font-size: 15px;
     }
 
-    .date-slide-archide {
-        margin-right: 30px;
-    }
-
     .col-archived {
         margin-left: 0px;
         width: calc(100%/3);
@@ -1853,6 +1935,19 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 991.9px) {
+    .date-slide-archide {
+        font-size: 7px;
+    }
+
+    .author-slide-archide p {
+        font-size: 7px;
+    }
+
+    .author-slide-archide img {
+        width: 12px;
+        height: 12px;
+    }
+
     .big-img-blog {
         height: 50%;
     }
@@ -2012,7 +2107,7 @@ button#dropdownMenuButton {
     }
 
     .title-item-archied {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .text-archived-item {
@@ -2089,11 +2184,11 @@ button#dropdownMenuButton {
     }
 
     .date-slide-blog {
-        margin-right: 80px;
         font-size: 8px;
     }
 
     .author-slide-blog p {
+        width: 72px;
         font-size: 8px;
     }
 
@@ -2191,7 +2286,6 @@ button#dropdownMenuButton {
 
     .button-nav {
         margin: auto;
-        padding: 8px 8px 8px 8px;
         width: 25%;
     }
 
@@ -2363,6 +2457,10 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 767.9px) {
+    .author-slide-archide p {
+        width: 44px;
+    }
+
     .banner {
         padding-bottom: 800px;
     }
@@ -2386,6 +2484,29 @@ button#dropdownMenuButton {
 }
 
 @media screen and (max-width: 575.9px) {
+    .description-item-blog {
+        flex-direction: column;
+    }
+
+    .author-slide-archide p {
+        width: 96px;
+    }
+
+    .author-slide-archide p {
+        font-size: 12px;
+    }
+
+    .content-article-height a {
+        flex: none;
+    }
+
+    .description-item-archide {
+        justify-content: space-around;
+    }
+
+    .date-slide-archide {
+        font-size: 12px;
+    }
 
     .archived-top-img {
         height: 208px;
@@ -2632,6 +2753,23 @@ button#dropdownMenuButton {
 }
 
 @media only screen and (max-width:280px) {
+    .description-item-archide {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-article-short img {
+        height: 200px;
+    }
+
+    .author-slide-archide a {
+        justify-content: center;
+    }
+
+    .content-article-short:hover {
+        bottom: -25px;
+    }
+
     .arrow-pre-about {
         right: 63%;
         bottom: 8.9%;
