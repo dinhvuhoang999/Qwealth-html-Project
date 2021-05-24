@@ -76,7 +76,8 @@ body {
 
 .nav-link {
     display: inline-block;
-    padding: 14px 19px 10px 19px !important;
+    padding: 14px 19px !important;
+    line-height: 1;
     color: #333333 !important;
     font-size: 16px;
     transition: 0.3s;
