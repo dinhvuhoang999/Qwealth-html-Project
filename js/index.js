@@ -127,8 +127,8 @@ $(document).ready(function () {
   $(".dropdown-item").click(function () {
     const text = this.outerText;
     $("#dropdownMenuButton").text(this.outerText);
-  });
 });
+})
 // 
 $(document).ready(function () {
   $(".link-learn-banner").click(function () {
