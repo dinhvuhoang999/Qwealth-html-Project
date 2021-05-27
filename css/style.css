@@ -559,9 +559,7 @@ section.variable.slider.slide-homepage.slick-initialized.slick-slider {
 }
 
 .button-member-card:hover {
-    background-color: rgba(0, 128, 0, 0.582);
     color: white;
-    text-decoration: none;
 }
 
 .a-member-card {
