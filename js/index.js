@@ -53,10 +53,10 @@ $(function () {
         dots: true,
         infinite: false,
         variableWidth: true,
-        prevArrow: '<i class="fas fa-arrow-left home-slide-arrow"></i>',
-        nextArrow: '<i class="fas fa-arrow-right home-slide-arrow"></i>',
+        prevArrow: '<i class="fas fa-arrow-left custom-slide-arrow"></i>',
+        nextArrow: '<i class="fas fa-arrow-right custom-slide-arrow"></i>',
         init: changePositionOfArrow(".slide-homepage"),
-        dotsClass: "slick-dots home-slide-dot",
+        dotsClass: "slick-dots custom-slide-dot",
     });
 });
 
@@ -164,8 +164,10 @@ $(function () {
     $(".about-slide").slick({
         dots: true,
         infinite: false,
-        prevArrow: ".arrow-pre-about",
-        nextArrow: ".arrow-next-about",
+        prevArrow: '<i class="fas fa-arrow-left custom-slide-arrow"></i>',
+        nextArrow: '<i class="fas fa-arrow-right custom-slide-arrow"></i>',
+        init: changePositionOfArrow(".about-slide"),
+        dotsClass: "slick-dots custom-slide-dot",
         variableWidth: true,
     });
 });

@@ -1660,6 +1660,12 @@ button#dropdownMenuButton {
 
 .about-slide .slick-dots {
     bottom: 58px;
+    top: auto;
+}
+
+.about-slide .custom-slide-arrow {
+    bottom: 61px;
+    top: auto;
 }
 
 .arrow-pre-about {
@@ -2795,4 +2801,39 @@ button#dropdownMenuButton {
         font-size: 10px;
     }
 
+}
+
+.slide-homepage .slick-dots {
+    top: calc(100% + 40px);
+}
+
+.custom-slide-arrow {
+    position: absolute;
+    top: calc(100% + 50px);
+}
+
+.custom-slide-arrow:hover {
+    opacity: 0.75;
+}
+
+.custom-slide-arrow.slick-disabled {
+    cursor: not-allowed;
+    opacity: 0.25;
+}
+
+.custom-slide-arrow,
+.custom-slide-dot li button:before {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.25;
+}
+
+.custom-slide-dot li button:hover:before {
+    opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: white;
 }
