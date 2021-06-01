@@ -2569,9 +2569,9 @@ button#dropdownMenuButton {
         left: 67%;
     }
 
-    .slide-item-about {
+    /* .slide-item-about {
         width: 100% !important;
-    }
+    } */
 
     .row-slide-about-top .col-lg-8 {
         padding-right: 0px;
@@ -2836,4 +2836,251 @@ button#dropdownMenuButton {
 .slick-dots li.slick-active button:before {
     opacity: 0.75;
     color: white;
+}
+
+@media only screen and (max-width: 991.9px) {
+    .slick-dots {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Membership-detail */
+.bgList {
+    background-color: #F4F3EC;
+}
+
+.membership_detail .container-banner .banner-text-wrapper {
+    max-width: 700px;
+}
+
+.membership_detail .text-banner {
+    max-width: 485px;
+    margin-top: 142px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/* membership_detail--List */
+.membership_detail--List ul {
+    list-style: none;
+}
+
+.membership_detail--List li::before {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 10px;
+    background-image: url(http://placehold.it/32?text=fallback);
+    background-image: url(../img/Vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 13px;
+}
+
+.memberlist-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.memberlist-wrapper h2 {
+    font-family: Poppins-600;
+    color: #006634;
+    font-size: 38px;
+    line-height: 49.4px;
+    max-width: 373px;
+}
+
+.memberlist-wrapper ul {
+    padding-left: 0;
+}
+
+.memberlist-wrapper li {
+    font-family: publicsans-400;
+    color: #3A3A3A;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.memberlist-wrapper p {
+    font-family: publicsans-400;
+    color: #3A3A3A;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.memberlist-wrapper li:not(:first-child) {
+    margin-top: 10px;
+}
+
+/* membership_detail--banner */
+.membership_detail--banner.banner {
+    margin-top: 0;
+}
+
+.membership_detail--banner .background-img-slide img {
+    z-index: inherit;
+}
+
+.membership_detail--banner .banner-text-wrapper .block-1 {
+    max-width: 580px;
+}
+
+.membership_detail--banner .banner-text-wrapper h2 {
+    font-family: Poppins-600;
+    color: #FFFFFF;
+    font-size: 38px;
+    line-height: 49.4px;
+}
+
+.membership_detail--banner .banner-text-wrapper p {
+    font-family: publicsans-400;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.membership_detail .padding-left-15 {
+    padding-left: 15px;
+}
+
+/* membership quotation */
+.membership_detail--quotation {
+    margin-top: 80px;
+}
+
+.membership_detail--quotation .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+    margin: auto;
+    max-width: 680px;
+}
+
+.membership_detail--quotation .quotation_image img {
+    width: 109px;
+    height: 109px;
+}
+
+.membership_detail--quotation h2 {
+    font-family: Poppins-600;
+    color: #006634;
+    font-size: 38px;
+    line-height: 49.4px;
+    margin-top: 34px;
+}
+
+.membership_detail--quotation p {
+    font-family: publicsans-400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 22px;
+}
+
+@media only screen and (max-width: 991.9px) {
+
+    /* membership_detail */
+    .membership_detail .banner-text-wrapper {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .membership_detail .container-banner {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .membership_detail .text-banner {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .membership_detail .title-banner {
+        margin-bottom: 50px;
+        font-size: 48px;
+    }
+
+    /* membership_detail--List */
+    .memberlist-wrapper h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .memberlist-wrapper li {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .memberlist-wrapper p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .membership_detail--banner .banner-text-wrapper h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .membership_detail--banner .banner-text-wrapper p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .membership_detail--banner.banner {
+        padding-bottom: 370px;
+    }
+
+    /* membership quotation */
+    .membership_detail--quotation .wrapper {
+        padding: 50px 0;
+    }
+
+    .membership_detail--quotation .quotation_image img {
+        width: 84px;
+        height: 84px;
+    }
+
+    .membership_detail--quotation h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .membership_detail--quotation p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 767.9px) {
+    .membership_detail .text-banner {
+        font-size: 15px;
+    }
+
+    .membership_detail .title-banner {
+        font-size: 30px;
+    }
+
+    .membership_detail--banner.banner {
+        padding-bottom: 500px;
+    }
+}
+
+@media only screen and (max-width: 575.9px) {
+    .memberlist-wrapper ul {
+        padding-left: 10px;
+    }
+
+    .membership_detail--banner.banner {
+        padding-bottom: 800px;
+    }
 }
