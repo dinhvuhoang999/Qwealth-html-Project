@@ -1,0 +1,246 @@
+@font-face {
+  font-family: publicsans-900;
+  src: url("../font/Public_Sans/static/PublicSans-Black.ttf");
+}
+
+.become__member {
+  margin-top: 100px;
+  margin-bottom: 83px;
+}
+
+.become__member__articles .title-artilces {
+  margin-top: 125px;
+}
+
+.become__member .member__slider {
+  margin-top: 64px;
+}
+
+.become__member .container {
+  margin: 0 10px;
+}
+
+.border__top {
+  border-top: 8px solid;
+}
+
+.become__member .member__slider--item {
+  height: initial;
+  padding-bottom: 42px;
+  background: #f4f3ec;
+  border-radius: 5px;
+}
+
+.member__slider--first.border__top {
+  border-color: #333333;
+}
+
+.member__slider--seconds.border__top {
+  border-color: #006634;
+}
+
+.member__slider--third.border__top {
+  border-color: #ee964b;
+}
+
+.member__slider--fourth.border__top {
+  border-color: #f95738;
+}
+
+.member__slider--fifth.border__top {
+  border-color: #f4d35e;
+}
+
+.become__member .slick-track {
+  display: flex;
+  height: 100%;
+}
+
+.become__member .slick-dots {
+  max-width: 1180px;
+  bottom: -45px;
+}
+
+.become__member .slick-dots li {
+  margin: 0 10px;
+}
+
+.become__member .slick-dots li button:before {
+  font-size: 8px;
+}
+
+.become__member .slick-dots li.slick-active button:before {
+  color: #0d3b66;
+}
+
+.become__member .become__member--title {
+  margin-bottom: 22px;
+  font-size: 38px;
+  font-family: Poppins-600;
+  line-height: 49px;
+  color: #006634;
+}
+
+.become__member .become__member--subtitle {
+  color: #3a3a3a;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: publicsans-400;
+}
+
+.become__member .become__member--subtitle span {
+  display: block;
+  margin-bottom: 22px;
+  font-family: publicsans-700;
+}
+
+.become__member .become__member--link {
+  color: #f95738;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: publicsans-700;
+  text-decoration: underline;
+}
+
+.become__member .card__top {
+  margin-top: 41px;
+  margin-bottom: 46px;
+  text-align: center;
+  color: #333333;
+}
+
+.become__member .card__top--title {
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: publicsans-900;
+}
+
+.become__member .card__top--price {
+  margin-bottom: 46px;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: Poppins-400;
+}
+
+.become__member .superscript {
+  font-size: 20px;
+  line-height: 20px;
+  vertical-align: super;
+  position: relative;
+  top: -4px;
+  right: -6px;
+}
+
+.become__member .subscript {
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  left: -8px;
+}
+
+.become__member .card__top--link {
+  display: inline-block;
+  min-width: 180px;
+  min-height: 45px;
+  color: #fff;
+  background: #333;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 45px;
+  font-family: publicsans-700;
+}
+
+.become__member .member__slider--seconds .card__top--title {
+  color: #006634;
+}
+
+.become__member .member__slider--seconds .card__top--link {
+  background: #006634;
+}
+
+.become__member .member__slider--third .card__top--title {
+  color: #ee964b;
+}
+
+.become__member .member__slider--third .card__top--link {
+  background: #ee964b;
+}
+
+.become__member .member__slider--fourth .card__top--title {
+  color: #f95738;
+}
+
+.become__member .member__slider--fourth .card__top--link {
+  background: #f95738;
+}
+
+.become__member .member__slider--fifth .card__top--title {
+  color: #f4d35e;
+}
+
+.become__member .member__slider--fifth .card__top--link {
+  background: #f4d35e;
+}
+
+.become__member .card__body {
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3a3a3a;
+  font-family: Roboto-400;
+}
+
+.become__member .card__body--item {
+  margin-bottom: 20px;
+}
+
+.become__member .card__body--img {
+  margin-right: 15px;
+}
+
+@media (min-width: 1199.9px) {
+  .become__member .container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .become__member .member__slider--item {
+    width: 280px;
+  }
+}
+
+@media (min-width: 575.9px) {
+  .become__member .slick-list {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .become__member .slick-slide {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .become__member .container {
+    margin: 0;
+  }
+
+  .become__member .col-12 {
+    padding: 0 10px !important;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .become__member {
+    margin-top: 70px;
+  }
+  .become__member .slick-dots {
+    top: initial;
+  }
+
+  .become__member .slick-dots li {
+    margin: 0 5px;
+  }
+}
